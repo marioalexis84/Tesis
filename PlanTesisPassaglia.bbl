@@ -1,0 +1,53 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{Jay}
+J.~J. Armas, {\em Conversations on quantum gravity}.
+\newblock Cambridge University Press, Universiteit van Amsterdam,
+2021
+% .
+
+\bibitem{Wittensoluble}
+E.~Witten, \emph{{(2+1)-Dimensional Gravity as an Exactly Soluble System}},
+  Nucl. Phys. B {\bf 311} (1988)
+46
+% .
+
+\bibitem{Wittenrevisited}
+E.~Witten, \emph{{Three-Dimensional Gravity Revisited}},
+\href{http://www.arXiv.org/abs/0706.3359}{{\tt 0706.3359}}
+% .
+
+\bibitem{Carlip}
+S.~Carlip, \emph{{Quantum Gravity in 2+1 Dimensions}},
+\newblock 12, 2023.
+\newblock
+\href{http://www.arXiv.org/abs/2312.12596}{{\tt 2312.12596}}.
+\newblock
+% .
+
+\bibitem{MaloneyWitten}
+A.~Maloney and E.~Witten, \emph{{Quantum Gravity Partition Functions in Three
+  Dimensions}}, JHEP {\bf 02} (2010) 029,
+\href{http://www.arXiv.org/abs/0712.0155}{{\tt 0712.0155}}
+% .
+
+\bibitem{Barnich}
+G.~Barnich, H.~A. Gonzalez, A.~Maloney  and B.~Oblak, \emph{{One-loop partition
+  function of three-dimensional flat gravity}}, JHEP {\bf 04} (2015) 178,
+\href{http://www.arXiv.org/abs/1502.06185}{{\tt 1502.06185}}
+% .
+
+\bibitem{Leston}
+M.~Leston, A.~Goya, G.~P\'erez-Nadal, M.~Passaglia  and G.~Giribet, \emph{{3D
+  Quantum Gravity Partition Function at Three Loops}}, Phys. Rev. Lett. {\bf
+  131} (2023), no.~18, 181601,
+\href{http://www.arXiv.org/abs/2307.03830}{{\tt 2307.03830}}
+% .
+
+\bibitem{Feyncalc}
+V.~Shtabovenko, R.~Mertig  and F.~Orellana, \emph{{FeynCalc 9.3: New features
+  and improvements}}, Comput. Phys. Commun. {\bf 256} (2020) 107478,
+\href{http://www.arXiv.org/abs/2001.04407}{{\tt 2001.04407}}
+% .
+
+\end{thebibliography}\endgroup

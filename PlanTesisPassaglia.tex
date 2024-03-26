@@ -1,0 +1,79 @@
+\documentclass[A4paper,12pt]{article}
+\usepackage[spanish]{babel}
+%\selectlanguage{spanish}
+%\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{anysize}
+\renewcommand\refname{Bibliograf\'ia}
+\marginsize{1.5cm}{1.5cm}{1cm}{4cm}
+\begin{document}
+	
+	
+\begin{center}
+\Large {\bf Plan de trabajo}
+\end{center}
+\vspace{1cm}
+
+\begin{center}
+	\Large {\bf Función de partición de gravedad cuántica a 3 loops}
+\end{center}
+\vspace{1cm}
+
+{\bf Estudiante: Mario Passaglia}
+
+{\bf Director: Mauricio Leston}
+
+
+
+
+\vspace{0.5cm}
+
+
+{\bf Resumen}
+
+\vspace{0.5cm}
+
+
+
+El plan de trabajo se enmarca dentro del estudio de un modelo de gravedad cuántica en 2+1 dimensiones, que es un modelo de juguete para abordar problemas de la cuantización de la gravedad en nuestro mundo de 3+1 dimensiones. Mas precisamente, el trabajo de tesis se centrara en una notable propiedad que se espera que la función de partición de gravedad en 2+1 tiene: es exacta cuando se computa a 1-loop, por lo que todas las contribuciones de ordenes superiores deberían anularse. El objetivo concreto es extender al caso D dimensional un trabajo reciente que mostró explícitamente que las contribuciones se anulan a 2 y 3 loops en D=2+1. Esto requiere el manejo correcto de expresiones que se anulan por el procedimiento del regularización dimensional. Conocer el resultado en una dimensión genérica ayudará a entender el carácter peculiar del caso 2+1 dimensional.
+
+
+\section*{Descripción del plan}
+
+Es habitual en física teórica el abordar modelos de juguete  cuya simplificación consiste en suprimir una o más dimensiones del espacio. Esto se hace ya en cursos elementales de física, en mecánica de fluidos y ha mostrado ser muy útil en teoría cuántica de campos (QFT), donde se pudieron construir modelos interactúantes en 1+1 o 2+1 dimensiones, de manera no perturbativa (es decir, mas allá del desarrollo en serie en las constantes de acoplamiento) , ayudando esto a comprender aspectos de modelos en el mundo en que vivimos de 3+1 dimensiones. Suprimir una o mas dimensiones simplifica enormemente el problema en el caso de QFT.
+
+El caso de la gravitación no es una excepción. En la teoría de gravitación de Einstein (o relatividad general) el campo gravitatorio es descripto por un tensor de rango 2 que provee la estructura métrica del espacio-tiempo. Tanto el numero de componentes de este tensor como la cantidad de simetrías de gauge (redundancias en la descripción física) dependen fuertemente de la dimensión. Pasar de nuestro mundo de 3+1 dimensiones a uno ficticio de 2+1 no solo reduce el número de grados de libertad sino también cambia dramáticamente la estructura del espacio de soluciones de relatividad general. Y esta simplificación es especialmente relevante para el intento de hallar una versión cuántica de la teoría de gravitación.
+
+
+
+Existen grandes marcos teóricos en los que la gravitación se describe en forma cuántica. Los mas importantes en cuánto a actividad son la teoría de cuerdas y en segundo lugar la gravedad cuántica de lazos. Ambas logran abordar el problema de la cuántización mediante cambios radicales en la forma que pensamos el pasaje de una teoría clásica a una cuántica. Ambas se hallan en un estado de desarrollo aun, con problemas por resolver \cite{Jay}. Independientemente del posible éxito de estos programas ambiciosos, sería deseable tener una versión sencilla a modo de modelo de juguete en la que se realice un procedimiento de cuántización en la relatividad general similar al realizado en el caso de la teoría de Maxwell. El caso 2+1 dimensional ofrece esa posibilidad, sin que tengamos que recurrir a ideas mas radicales.
+
+El estudio del caso 2+1 dimensional como modelo de juguete para gravedad cuántica tienen una larga historia arrancando en la década de 1980 con un paper de Edward Witten \cite{Wittensoluble}, en el que se remarco las características peculiares del caso 2+1 dimensional que hacen que sea posible tratarla de forma similar a otros modelos conocidos. En las  décadas posteriores Witten y otros continuaron con este caso (vease por ejemplo \cite{Wittenrevisited}. Recientemente \cite{Carlip} se hizo un review de los hitos importantes en este área, mostrando que aún presenta interés y problemas abiertos.
+
+El temas de tesis tiene que ver con el cálculo de la función de partición en gravedad en 2+1, una cantidad que toma su nombre de la analogía con la función de partición en física estadistica. Esta función de partición fue calculada por Witten y Maloney \cite{MaloneyWitten} en el caso de constante cosmológica negativa y posteriormente parte de ese cálculo se extendió al caso de constante cosmológica nula \cite{Barnich}. El calculo de \cite{MaloneyWitten} fue muy importante porque es ahi que por primera vez se aplica un procedimiento de cuantización conocida en otras teorias (como las teorías de gauge del modelo estándard) al caso de gravedad. La función de partición es una cantidad de información sobre el espectro de la teoría.  En el caso de constante cosmológica negativa, el calculo de \cite{MaloneyWitten} dio un resultado insatisfactorio desde el punto de vista físico, lo que dio lugar a propuestas posteriores por subsanar esto mediante cambios en la propuesta de cuántización. Este es un tema no resuelto aún pero no es tema de trabajo de esta tesis. Lo que nos interesa a nosotros es una parte de esa función de partición sobre la cuál se concluyó que es exacta a 1-loop. Esto significa que si se hace un calculo vía teoría de perturbaciones usando como parámetro la constante de gravitación de Newton el resultado se trunca en un orden finito que corresponde a 1-loop (un lazo en la expansión en diagramas de Feynman).
+
+Desde que se argumento a favor de la propiedad se ser exacta a 1-loop (tanto en el caso de constante cosmológica negativa y posteriormente en el caso de constante cosmológica nula) nunca se había realizado una verificación mediante un calculo explicito en teoría de perturbaciones hasta el trabajo reciente de 2023 \cite{Leston}.  Allí mediante el uso de un paquete de Mathematica llamado FeynCalc \cite{Feyncalc} se pudo abordar el problema monstruoso de verificación de la cancelación de diagramas de Feynman con dos y tres lazos y sin patas externas, diagramas que aparecen en la función de partición a 2 y 3 loops. La verificación de la cancelación no solo requirió el calculo de las expresiones de cada diagrama sino el uso de lo que se conoce como regularización dimensional para poder ver que términos se anulan y cuales son equivalentes.
+
+Y aquí llegamos al cálculo concreto que se propone para la tesis de Mario Passaglia: extender el calculo de \cite{Leston} al  caso D dimensional a fin de ver si efectivamente algo especial ocurre en el caso D=2+1. Los diagramas ya se conocen en D dimensiones. Lo que debe extenderse es la aplicación del procedimiento de regularización dimensional a ese caso genérico. La dificultad reside  en que, en el caso D dimensional, aparecen muchos mas términos que en el caso D=2+1. Por lo que implementarse algún procedimiento para agrupar términos equivalentes desde el punto de vista de la regularización dimensional y reducir esas contribuciones lo mas posible. Se espera obtener una serie de términos pesados con un polinomio en la variable D, que se anule unicamente cuando D=3.
+
+En lo que respecta al aprendizaje del estudiante, el desarrollo del plan llevará a Mario Passaglia a familiarizarse con los siguientes temas y técnicas:
+
+\begin{enumerate}
+	\item El contexto general de gravedad en 2+1. Esto a través de la lectura asistida de algunos reviews seleccionados.
+	\item Regularización dimensional aplicado al caso de diagramas a 2 y 3 loops. Para ello se asignarán ejercicios para reproducir los resultos del paper.
+	\item Aprendizaje del paquete de Mathematica {\it FeynCalc} y el uso del cluster Dirac.
+\end{enumerate}
+
+
+De esta forma, este plan permitirá a Mario Passaglia adentrarse en un tema actual de investigación, que es accesible dado que sólo requiere conocer teoría cuántica de campos y relatividad general, y además hacer uso de herramientas computacionales de calculo simbólico.
+
+
+\section*{Factibilidad}
+
+Por tratarse de un trabajo de física teórica, no necesitamos mas que conexión a internet y un software como Mathematica. 
+En cuanto el tema, el director tiene amplia experiencia  y podrá guiar al estudiante sin dificultad.
+
+\bibliographystyle{toine}
+\bibliography{bibliografia}{}
+
+\end{document}
