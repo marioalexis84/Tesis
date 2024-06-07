@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: PlanTesisPassaglia.aux
+The style file: toine.bst
+Database file #1: bibliografia.bib
+Repeated entry---line 147 of file bibliografia.bib
+ : @article{Feyncalc
+ :                  ,
+I'm skipping whatever remains of this entry
+Warning--empty booktitle in Carlip
+You've used 8 entries,
+            2139 wiz_defined-function locations,
+            562 strings with 4535 characters,
+and the built_in function-call counts, 2136 in all, are:
+= -- 225
+> -- 66
+< -- 0
++ -- 26
+- -- 18
+* -- 142
+:= -- 314
+add.period$ -- 11
+call.type$ -- 8
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 136
+empty$ -- 211
+format.name$ -- 18
+if$ -- 552
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 21
+newline$ -- 47
+num.names$ -- 8
+pop$ -- 47
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 71
+stack$ -- 0
+substring$ -- 40
+swap$ -- 41
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 13
+width$ -- 9
+write$ -- 93
+(There was 1 error message)

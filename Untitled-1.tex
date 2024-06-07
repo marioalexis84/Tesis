@@ -1,0 +1,386 @@
+%% AMS-LaTeX Created with the Wolfram Language : www.wolfram.com
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphics, setspace}
+
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
+
+\newcounter{mathematicapage}
+\begin{document}
+
+\begin{doublespace}
+\noindent\(\pmb{<< \text{FeynCalc$\grave{ }$}}\)
+\end{doublespace}
+
+\noindent\(\text{FeynCalc }\text{10.0.0 (dev version, 2024-06-05 15:34:16 -03:00, ad9fc8fe). For help, use the }\underline{\text{online} \text{documentation},}\text{
+visit the }\underline{\text{forum}}\text{ and have a look at the supplied }\underline{\text{examples}.}\text{ The PDF-version of the manual can be
+downloaded }\underline{\text{here}.}\)
+
+\noindent\(\text{If you use FeynCalc in your research, please evaluate FeynCalcHowToCite[] to learn how to cite this software.}\)
+
+\noindent\(\text{Please keep in mind that the proper academic attribution of our work is crucial to ensure the future development of this package!}\)
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\\
+\pmb{\text{earth}= \text{Get}[\text{{``}/home/alexis/Descargas/TesisMP/Diagramas/Earth.txt{''}}] }\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(-\frac{1}{16 (D-2)^2 \text{k1}^2 \text{k2}^2 \text{k3}^2 (\text{k1}+\text{k2}+\text{k3})^2}K^4 \left(23 (\text{k1}\cdot \text{k3})^2 D^6+21
+\text{k2}^4 D^6+23 (\text{k2}\cdot \text{k3})^2 D^6+21 \text{k3}^4 D^6+38 (\text{k1}\cdot \text{k3}) \text{k2}^2 D^6+38 (\text{k1}\cdot \text{k3})
+(\text{k2}\cdot \text{k3}) D^6+42 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^6+42 (\text{k1}\cdot \text{k3}) \text{k3}^2 D^6+40 \text{k2}^2 \text{k3}^2
+D^6+42 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^6-30 (\text{k1}\cdot \text{k3})^2 D^5-164 \text{k2}^4 D^5-30 (\text{k2}\cdot \text{k3})^2 D^5-164
+\text{k3}^4 D^5-408 (\text{k1}\cdot \text{k3}) \text{k2}^2 D^5-220 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3}) D^5-328 \text{k2}^2 (\text{k2}\cdot
+\text{k3}) D^5-328 (\text{k1}\cdot \text{k3}) \text{k3}^2 D^5-462 \text{k2}^2 \text{k3}^2 D^5-328 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^5-929
+(\text{k1}\cdot \text{k3})^2 D^4+343 \text{k2}^4 D^4-929 (\text{k2}\cdot \text{k3})^2 D^4+343 \text{k3}^4 D^4+1538 (\text{k1}\cdot \text{k3}) \text{k2}^2
+D^4-154 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3}) D^4+686 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^4+686 (\text{k1}\cdot \text{k3}) \text{k3}^2
+D^4+1958 \text{k2}^2 \text{k3}^2 D^4+686 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^4+3024 (\text{k1}\cdot \text{k3})^2 D^3-76 \text{k2}^4 D^3+3024
+(\text{k2}\cdot \text{k3})^2 D^3-76 \text{k3}^4 D^3-2240 (\text{k1}\cdot \text{k3}) \text{k2}^2 D^3+1872 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot
+\text{k3}) D^3-152 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^3-152 (\text{k1}\cdot \text{k3}) \text{k3}^2 D^3-3252 \text{k2}^2 \text{k3}^2 D^3-152
+(\text{k2}\cdot \text{k3}) \text{k3}^2 D^3-500 (\text{k1}\cdot \text{k3})^2 D^2-76 \text{k2}^4 D^2-500 (\text{k2}\cdot \text{k3})^2 D^2-76 \text{k3}^4
+D^2+88 (\text{k1}\cdot \text{k3}) \text{k2}^2 D^2-520 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3}) D^2-152 \text{k2}^2 (\text{k2}\cdot \text{k3})
+D^2-152 (\text{k1}\cdot \text{k3}) \text{k3}^2 D^2+272 \text{k2}^2 \text{k3}^2 D^2-152 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^2+\left(21 D^5-164
+D^4+343 D^3-76 D^2-76 D-48\right) \text{k1}^4 D-3312 (\text{k1}\cdot \text{k3})^2 D-48 \text{k2}^4 D-3312 (\text{k2}\cdot \text{k3})^2 D-48 \text{k3}^4
+D+2176 (\text{k1}\cdot \text{k3}) \text{k2}^2 D-2080 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3}) D-96 \text{k2}^2 (\text{k2}\cdot \text{k3})
+D-96 (\text{k1}\cdot \text{k3}) \text{k3}^2 D+3168 \text{k2}^2 \text{k3}^2 D-96 (\text{k2}\cdot \text{k3}) \text{k3}^2 D+\left(23 D^6-30 D^5-929
+D^4+3024 D^3-500 D^2-3312 D-640\right) (\text{k1}\cdot \text{k2})^2-640 (\text{k1}\cdot \text{k3})^2-640 (\text{k2}\cdot \text{k3})^2+384 (\text{k1}\cdot
+\text{k3}) \text{k2}^2-512 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3})+640 \text{k2}^2 \text{k3}^2+2 (\text{k1}\cdot \text{k2}) \left(19
+(\text{k2}\cdot \text{k3}) D^6+19 \text{k3}^2 D^6-110 (\text{k2}\cdot \text{k3}) D^5-204 \text{k3}^2 D^5-77 (\text{k2}\cdot \text{k3}) D^4+769 \text{k3}^2
+D^4+936 (\text{k2}\cdot \text{k3}) D^3-1120 \text{k3}^2 D^3-260 (\text{k2}\cdot \text{k3}) D^2+44 \text{k3}^2 D^2+\left(21 D^5-164 D^4+343 D^3-76
+D^2-76 D-48\right) \text{k2}^2 D-1040 (\text{k2}\cdot \text{k3}) D+1088 \text{k3}^2 D+\left(19 D^6-110 D^5-77 D^4+936 D^3-260 D^2-1040 D-256\right)
+(\text{k1}\cdot \text{k3})-256 (\text{k2}\cdot \text{k3})+192 \text{k3}^2\right)+2 \text{k1}^2 \left(20 \text{k2}^2 D^6+19 (\text{k2}\cdot \text{k3})
+D^6+20 \text{k3}^2 D^6-231 \text{k2}^2 D^5-204 (\text{k2}\cdot \text{k3}) D^5-231 \text{k3}^2 D^5+979 \text{k2}^2 D^4+769 (\text{k2}\cdot \text{k3})
+D^4+979 \text{k3}^2 D^4-1626 \text{k2}^2 D^3-1120 (\text{k2}\cdot \text{k3}) D^3-1626 \text{k3}^2 D^3+136 \text{k2}^2 D^2+44 (\text{k2}\cdot \text{k3})
+D^2+136 \text{k3}^2 D^2+\left(21 D^5-164 D^4+343 D^3-76 D^2-76 D-48\right) (\text{k1}\cdot \text{k2}) D+\left(21 D^5-164 D^4+343 D^3-76 D^2-76 D-48\right)
+(\text{k1}\cdot \text{k3}) D+1584 \text{k2}^2 D+1088 (\text{k2}\cdot \text{k3}) D+1584 \text{k3}^2 D+320 \text{k2}^2+192 (\text{k2}\cdot \text{k3})+320
+\text{k3}^2\right)\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{anteojo}= \text{Get}[\text{{``}/home/alexis/Descargas/TesisMP/Diagramas/AnteojoFinal.txt{''}}] }\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\frac{1}{16 (D-2)^2 \text{k2}^2.\text{k3}^2.\text{k5}^2.(\text{k2}+\text{k3})^2.(\text{k2}+\text{k3}+\text{k5})^2}K^4 \left(-2 (\text{k2}\cdot
+\text{k5})^3 D^6+12 \text{k3}^6 D^6-2 (\text{k3}\cdot \text{k5})^3 D^6+20 (\text{k2}\cdot \text{k5}) \text{k3}^4 D^6-4 (\text{k2}\cdot \text{k5})
+(\text{k3}\cdot \text{k5})^2 D^6+4 \text{k3}^2 (\text{k3}\cdot \text{k5})^2 D^6+10 \text{k3}^2 \text{k5}^4 D^6+5 (\text{k2}\cdot \text{k5})^2 \text{k3}^2
+D^6-4 (\text{k2}\cdot \text{k5})^2 (\text{k3}\cdot \text{k5}) D^6+18 \text{k3}^4 (\text{k3}\cdot \text{k5}) D^6+13 (\text{k2}\cdot \text{k5}) \text{k3}^2
+(\text{k3}\cdot \text{k5}) D^6-2 (\text{k2}\cdot \text{k5})^2 \text{k5}^2 D^6+22 \text{k3}^4 \text{k5}^2 D^6-2 (\text{k3}\cdot \text{k5})^2 \text{k5}^2
+D^6+19 (\text{k2}\cdot \text{k5}) \text{k3}^2 \text{k5}^2 D^6-2 (\text{k2}\cdot \text{k5}) (\text{k3}\cdot \text{k5}) \text{k5}^2 D^6+18 \text{k3}^2
+(\text{k3}\cdot \text{k5}) \text{k5}^2 D^6+76 (\text{k2}\cdot \text{k5})^3 D^5-88 \text{k3}^6 D^5+76 (\text{k3}\cdot \text{k5})^3 D^5-190 (\text{k2}\cdot
+\text{k5}) \text{k3}^4 D^5+156 (\text{k2}\cdot \text{k5}) (\text{k3}\cdot \text{k5})^2 D^5+92 \text{k3}^2 (\text{k3}\cdot \text{k5})^2 D^5-124 \text{k3}^2
+\text{k5}^4 D^5+88 (\text{k2}\cdot \text{k5})^2 \text{k3}^2 D^5+156 (\text{k2}\cdot \text{k5})^2 (\text{k3}\cdot \text{k5}) D^5-126 \text{k3}^4 (\text{k3}\cdot
+\text{k5}) D^5+20 (\text{k2}\cdot \text{k5}) \text{k3}^2 (\text{k3}\cdot \text{k5}) D^5+76 (\text{k2}\cdot \text{k5})^2 \text{k5}^2 D^5-266 \text{k3}^4
+\text{k5}^2 D^5+76 (\text{k3}\cdot \text{k5})^2 \text{k5}^2 D^5-208 (\text{k2}\cdot \text{k5}) \text{k3}^2 \text{k5}^2 D^5+80 (\text{k2}\cdot \text{k5})
+(\text{k3}\cdot \text{k5}) \text{k5}^2 D^5-172 \text{k3}^2 (\text{k3}\cdot \text{k5}) \text{k5}^2 D^5-530 (\text{k2}\cdot \text{k5})^3 D^4+154 \text{k3}^6
+D^4-530 (\text{k3}\cdot \text{k5})^3 D^4+598 (\text{k2}\cdot \text{k5}) \text{k3}^4 D^4-1104 (\text{k2}\cdot \text{k5}) (\text{k3}\cdot \text{k5})^2
+D^4-936 \text{k3}^2 (\text{k3}\cdot \text{k5})^2 D^4+562 \text{k3}^2 \text{k5}^4 D^4-1289 (\text{k2}\cdot \text{k5})^2 \text{k3}^2 D^4-1104 (\text{k2}\cdot
+\text{k5})^2 (\text{k3}\cdot \text{k5}) D^4+178 \text{k3}^4 (\text{k3}\cdot \text{k5}) D^4-789 (\text{k2}\cdot \text{k5}) \text{k3}^2 (\text{k3}\cdot
+\text{k5}) D^4-530 (\text{k2}\cdot \text{k5})^2 \text{k5}^2 D^4+1146 \text{k3}^4 \text{k5}^2 D^4-530 (\text{k3}\cdot \text{k5})^2 \text{k5}^2 D^4+837
+(\text{k2}\cdot \text{k5}) \text{k3}^2 \text{k5}^2 D^4-574 (\text{k2}\cdot \text{k5}) (\text{k3}\cdot \text{k5}) \text{k5}^2 D^4+594 \text{k3}^2
+(\text{k3}\cdot \text{k5}) \text{k5}^2 D^4+1176 (\text{k2}\cdot \text{k5})^3 D^3+34 \text{k3}^6 D^3+1176 (\text{k3}\cdot \text{k5})^3 D^3-652 (\text{k2}\cdot
+\text{k5}) \text{k3}^4 D^3+2480 (\text{k2}\cdot \text{k5}) (\text{k3}\cdot \text{k5})^2 D^3+2024 \text{k3}^2 (\text{k3}\cdot \text{k5})^2 D^3-1040
+\text{k3}^2 \text{k5}^4 D^3+4944 (\text{k2}\cdot \text{k5})^2 \text{k3}^2 D^3+2480 (\text{k2}\cdot \text{k5})^2 (\text{k3}\cdot \text{k5}) D^3+138
+\text{k3}^4 (\text{k3}\cdot \text{k5}) D^3+1944 (\text{k2}\cdot \text{k5}) \text{k3}^2 (\text{k3}\cdot \text{k5}) D^3+1176 (\text{k2}\cdot \text{k5})^2
+\text{k5}^2 D^3-1750 \text{k3}^4 \text{k5}^2 D^3+1176 (\text{k3}\cdot \text{k5})^2 \text{k5}^2 D^3-1428 (\text{k2}\cdot \text{k5}) \text{k3}^2 \text{k5}^2
+D^3+1304 (\text{k2}\cdot \text{k5}) (\text{k3}\cdot \text{k5}) \text{k5}^2 D^3-904 \text{k3}^2 (\text{k3}\cdot \text{k5}) \text{k5}^2 D^3-328 (\text{k2}\cdot
+\text{k5})^3 D^2-40 \text{k3}^6 D^2-328 (\text{k3}\cdot \text{k5})^3 D^2-192 (\text{k2}\cdot \text{k5}) \text{k3}^4 D^2-720 (\text{k2}\cdot \text{k5})
+(\text{k3}\cdot \text{k5})^2 D^2+600 \text{k3}^2 (\text{k3}\cdot \text{k5})^2 D^2+360 \text{k3}^2 \text{k5}^4 D^2-6284 (\text{k2}\cdot \text{k5})^2
+\text{k3}^2 D^2-720 (\text{k2}\cdot \text{k5})^2 (\text{k3}\cdot \text{k5}) D^2+56 \text{k3}^4 (\text{k3}\cdot \text{k5}) D^2+836 (\text{k2}\cdot
+\text{k5}) \text{k3}^2 (\text{k3}\cdot \text{k5}) D^2-328 (\text{k2}\cdot \text{k5})^2 \text{k5}^2 D^2-512 \text{k3}^4 \text{k5}^2 D^2-328 (\text{k3}\cdot
+\text{k5})^2 \text{k5}^2 D^2+524 (\text{k2}\cdot \text{k5}) \text{k3}^2 \text{k5}^2 D^2-392 (\text{k2}\cdot \text{k5}) (\text{k3}\cdot \text{k5})
+\text{k5}^2 D^2+392 \text{k3}^2 (\text{k3}\cdot \text{k5}) \text{k5}^2 D^2+2 \left(6 D^5-44 D^4+77 D^3+17 D^2-20 D-36\right) \text{k2}^6 D-960 (\text{k2}\cdot
+\text{k5})^3 D-72 \text{k3}^6 D-960 (\text{k3}\cdot \text{k5})^3 D+736 (\text{k2}\cdot \text{k5}) \text{k3}^4 D-2016 (\text{k2}\cdot \text{k5}) (\text{k3}\cdot
+\text{k5})^2 D-2672 \text{k3}^2 (\text{k3}\cdot \text{k5})^2 D+800 \text{k3}^2 \text{k5}^4 D+736 (\text{k2}\cdot \text{k5})^2 \text{k3}^2 D-2016
+(\text{k2}\cdot \text{k5})^2 (\text{k3}\cdot \text{k5}) D-264 \text{k3}^4 (\text{k3}\cdot \text{k5}) D-2912 (\text{k2}\cdot \text{k5}) \text{k3}^2
+(\text{k3}\cdot \text{k5}) D-960 (\text{k2}\cdot \text{k5})^2 \text{k5}^2 D+2248 \text{k3}^4 \text{k5}^2 D-960 (\text{k3}\cdot \text{k5})^2 \text{k5}^2
+D+1072 (\text{k2}\cdot \text{k5}) \text{k3}^2 \text{k5}^2 D-1056 (\text{k2}\cdot \text{k5}) (\text{k3}\cdot \text{k5}) \text{k5}^2 D+640 \text{k3}^2
+(\text{k3}\cdot \text{k5}) \text{k5}^2 D+\left(34 D^6-92 D^5-822 D^4+2592 D^3+984 D^2-3904 D-2176\right) (\text{k2}\cdot \text{k3})^3+512 (\text{k2}\cdot
+\text{k5}) \text{k3}^4-1088 \text{k3}^2 (\text{k3}\cdot \text{k5})^2+448 (\text{k2}\cdot \text{k5})^2 \text{k3}^2-1152 (\text{k2}\cdot \text{k5})
+\text{k3}^2 (\text{k3}\cdot \text{k5})+1088 \text{k3}^4 \text{k5}^2+2 \text{k2}^4 \left(20 \text{k3}^2 D^6+10 (\text{k3}\cdot \text{k5}) D^6+11 \text{k5}^2
+D^6-202 \text{k3}^2 D^5-95 (\text{k3}\cdot \text{k5}) D^5-133 \text{k5}^2 D^5+715 \text{k3}^2 D^4+299 (\text{k3}\cdot \text{k5}) D^4+573 \text{k5}^2
+D^4-893 \text{k3}^2 D^3-326 (\text{k3}\cdot \text{k5}) D^3-875 \text{k5}^2 D^3-344 \text{k3}^2 D^2-96 (\text{k3}\cdot \text{k5}) D^2-256 \text{k5}^2
+D^2+\left(27 D^5-201 D^4+373 D^3+33 D^2-148 D-84\right) (\text{k2}\cdot \text{k3}) D+\left(9 D^5-63 D^4+89 D^3+69 D^2+28 D-132\right) (\text{k2}\cdot
+\text{k5}) D+1148 \text{k3}^2 D+368 (\text{k3}\cdot \text{k5}) D+1124 \text{k5}^2 D+544 \text{k3}^2+256 (\text{k3}\cdot \text{k5})+544 \text{k5}^2\right)+(\text{k2}\cdot
+\text{k3})^2 \left(30 (\text{k3}\cdot \text{k5}) D^6+39 \text{k5}^2 D^6-116 (\text{k3}\cdot \text{k5}) D^5-404 \text{k5}^2 D^5-546 (\text{k3}\cdot
+\text{k5}) D^4+1101 \text{k5}^2 D^4+2136 (\text{k3}\cdot \text{k5}) D^3+1188 \text{k5}^2 D^3+448 (\text{k3}\cdot \text{k5}) D^2-7908 \text{k5}^2
+D^2-3024 (\text{k3}\cdot \text{k5}) D+5552 \text{k5}^2 D+2 \left(15 D^6-58 D^5-273 D^4+1068 D^3+224 D^2-1512 D-576\right) (\text{k2}\cdot \text{k5})+4
+\left(19 D^6-115 D^5+50 D^4+470 D^3-26 D^2-620 D-272\right) \text{k3}^2-1152 (\text{k3}\cdot \text{k5})+3456 \text{k5}^2\right)+\text{k2}^2 \left(40
+\text{k3}^4 D^6+5 (\text{k3}\cdot \text{k5})^2 D^6+10 \text{k5}^4 D^6+40 \text{k3}^2 (\text{k3}\cdot \text{k5}) D^6+46 \text{k3}^2 \text{k5}^2 D^6+19
+(\text{k3}\cdot \text{k5}) \text{k5}^2 D^6-404 \text{k3}^4 D^5+88 (\text{k3}\cdot \text{k5})^2 D^5-124 \text{k5}^4 D^5-390 \text{k3}^2 (\text{k3}\cdot
+\text{k5}) D^5-638 \text{k3}^2 \text{k5}^2 D^5-208 (\text{k3}\cdot \text{k5}) \text{k5}^2 D^5+1430 \text{k3}^4 D^4-1289 (\text{k3}\cdot \text{k5})^2
+D^4+562 \text{k5}^4 D^4+1292 \text{k3}^2 (\text{k3}\cdot \text{k5}) D^4+3404 \text{k3}^2 \text{k5}^2 D^4+837 (\text{k3}\cdot \text{k5}) \text{k5}^2
+D^4-1786 \text{k3}^4 D^3+4944 (\text{k3}\cdot \text{k5})^2 D^3-1040 \text{k5}^4 D^3-1566 \text{k3}^2 (\text{k3}\cdot \text{k5}) D^3-7996 \text{k3}^2
+\text{k5}^2 D^3-1428 (\text{k3}\cdot \text{k5}) \text{k5}^2 D^3-688 \text{k3}^4 D^2-6284 (\text{k3}\cdot \text{k5})^2 D^2+360 \text{k5}^4 D^2-288
+\text{k3}^2 (\text{k3}\cdot \text{k5}) D^2+5840 \text{k3}^2 \text{k5}^2 D^2+524 (\text{k3}\cdot \text{k5}) \text{k5}^2 D^2+2296 \text{k3}^4 D+736
+(\text{k3}\cdot \text{k5})^2 D+800 \text{k5}^4 D+1912 \text{k3}^2 (\text{k3}\cdot \text{k5}) D+2960 \text{k3}^2 \text{k5}^2 D+1072 (\text{k3}\cdot
+\text{k5}) \text{k5}^2 D+4 \left(19 D^6-115 D^5+50 D^4+470 D^3-26 D^2-620 D-272\right) (\text{k2}\cdot \text{k3})^2+4 \left(D^6+23 D^5-234 D^4+506
+D^3+150 D^2-668 D-272\right) (\text{k2}\cdot \text{k5})^2+1088 \text{k3}^4+448 (\text{k3}\cdot \text{k5})^2+640 \text{k3}^2 (\text{k3}\cdot \text{k5})+768
+\text{k3}^2 \text{k5}^2+(\text{k2}\cdot \text{k3}) \left(51 (\text{k3}\cdot \text{k5}) D^6+60 \text{k5}^2 D^6-404 (\text{k3}\cdot \text{k5}) D^5-734
+\text{k5}^2 D^5+829 (\text{k3}\cdot \text{k5}) D^4+3168 \text{k5}^2 D^4-80 (\text{k3}\cdot \text{k5}) D^3-4734 \text{k5}^2 D^3-452 (\text{k3}\cdot
+\text{k5}) D^2-1696 \text{k5}^2 D^2+128 (\text{k3}\cdot \text{k5}) D+6168 \text{k5}^2 D+8 \left(6 D^6-39 D^5+29 D^4+122 D^3+22 D^2-180 D-64\right)
+(\text{k2}\cdot \text{k5})+2 \left(57 D^6-504 D^5+1449 D^4-1234 D^3-1028 D^2+1864 D+1088\right) \text{k3}^2+512 (\text{k3}\cdot \text{k5})+3200 \text{k5}^2\right)+(\text{k2}\cdot
+\text{k5}) \left(2 \left(20 D^6-195 D^5+646 D^4-783 D^3-144 D^2+956 D+320\right) \text{k3}^2+\left(13 D^6+20 D^5-789 D^4+1944 D^3+836 D^2-2912 D-1152\right)
+(\text{k3}\cdot \text{k5})+2 D \left(9 D^5-86 D^4+297 D^3-452 D^2+196 D+320\right) \text{k5}^2\right)\right)+(\text{k2}\cdot \text{k3}) \left(2 (\text{k3}\cdot
+\text{k5})^2 D^6+11 \text{k5}^4 D^6+19 (\text{k3}\cdot \text{k5}) \text{k5}^2 D^6+180 (\text{k3}\cdot \text{k5})^2 D^5-142 \text{k5}^4 D^5-168 (\text{k3}\cdot
+\text{k5}) \text{k5}^2 D^5-1574 (\text{k3}\cdot \text{k5})^2 D^4+663 \text{k5}^4 D^4+509 (\text{k3}\cdot \text{k5}) \text{k5}^2 D^4+3312 (\text{k3}\cdot
+\text{k5})^2 D^3-1240 \text{k5}^4 D^3-652 (\text{k3}\cdot \text{k5}) \text{k5}^2 D^3+880 (\text{k3}\cdot \text{k5})^2 D^2+420 \text{k5}^4 D^2+316
+(\text{k3}\cdot \text{k5}) \text{k5}^2 D^2+2 \left(27 D^5-201 D^4+373 D^3+33 D^2-148 D-84\right) \text{k3}^4 D-4144 (\text{k3}\cdot \text{k5})^2
+D+928 \text{k5}^4 D+368 (\text{k3}\cdot \text{k5}) \text{k5}^2 D+2 \left(D^6+90 D^5-787 D^4+1656 D^3+440 D^2-2072 D-1024\right) (\text{k2}\cdot \text{k5})^2-2048
+(\text{k3}\cdot \text{k5})^2+(\text{k2}\cdot \text{k5}) \left(\left(51 D^6-404 D^5+829 D^4-80 D^3-452 D^2+128 D+512\right) \text{k3}^2+2 \left(5
+D^6+56 D^5-381 D^4-1188 D^3+7268 D^2-5552 D-2560\right) (\text{k3}\cdot \text{k5})+D \left(19 D^5-168 D^4+509 D^3-652 D^2+316 D+368\right) \text{k5}^2\right)+2
+\text{k3}^2 \left(4 \left(6 D^6-39 D^5+29 D^4+122 D^3+22 D^2-180 D-64\right) (\text{k3}\cdot \text{k5})+\left(30 D^6-367 D^5+1584 D^4-2367 D^3-848
+D^2+3084 D+1600\right) \text{k5}^2\right)\right)\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{T10} = \text{Get}[\text{{``}./Descargas/TesisMP/Diagramas/T10final.txt{''}}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(-\frac{1}{8 (D-2)^2 \text{k1}^2.\text{k2}^2.\text{k3}^2.(\text{k1}-\text{k2})^2.(\text{k1}-\text{k3})^2.(\text{k2}-\text{k3})^2}K^4 \left(-2
+(\text{k1}\cdot \text{k3}) \text{k2}^6 D^6+2 \text{k2}^2 \text{k3}^6 D^6+2 (\text{k1}\cdot \text{k3})^2 \text{k2}^4 D^6-2 (\text{k1}\cdot \text{k3})
+\text{k2}^2 (\text{k2}\cdot \text{k3})^2 D^6+4 \text{k2}^4 \text{k3}^4 D^6-4 (\text{k1}\cdot \text{k3}) \text{k2}^2 \text{k3}^4 D^6-4 \text{k2}^2
+(\text{k2}\cdot \text{k3}) \text{k3}^4 D^6+4 (\text{k1}\cdot \text{k3}) \text{k2}^4 (\text{k2}\cdot \text{k3}) D^6-2 (\text{k1}\cdot \text{k3})^2
+\text{k2}^2 (\text{k2}\cdot \text{k3}) D^6+2 \text{k2}^6 \text{k3}^2 D^6-6 (\text{k1}\cdot \text{k3}) \text{k2}^4 \text{k3}^2 D^6+2 \text{k2}^2 (\text{k2}\cdot
+\text{k3})^2 \text{k3}^2 D^6+2 (\text{k1}\cdot \text{k3})^2 \text{k2}^2 \text{k3}^2 D^6-4 \text{k2}^4 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^6+6
+(\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^6+4 (\text{k1}\cdot \text{k3})^4 D^5+4 (\text{k2}\cdot \text{k3})^4
+D^5+30 (\text{k1}\cdot \text{k3}) \text{k2}^6 D^5+16 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3})^3 D^5-24 \text{k2}^2 (\text{k2}\cdot \text{k3})^3
+D^5-30 \text{k2}^2 \text{k3}^6 D^5-28 (\text{k1}\cdot \text{k3})^2 \text{k2}^4 D^5-12 (\text{k1}\cdot \text{k3})^2 (\text{k2}\cdot \text{k3})^2 D^5+18
+\text{k2}^4 (\text{k2}\cdot \text{k3})^2 D^5+8 (\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot \text{k3})^2 D^5+18 (\text{k1}\cdot \text{k3})^2
+\text{k3}^4 D^5-70 \text{k2}^4 \text{k3}^4 D^5+18 (\text{k2}\cdot \text{k3})^2 \text{k3}^4 D^5+66 (\text{k1}\cdot \text{k3}) \text{k2}^2 \text{k3}^4
+D^5-18 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3}) \text{k3}^4 D^5+48 \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^4 D^5-34 (\text{k1}\cdot
+\text{k3})^3 \text{k2}^2 D^5+16 (\text{k1}\cdot \text{k3})^3 (\text{k2}\cdot \text{k3}) D^5-66 (\text{k1}\cdot \text{k3}) \text{k2}^4 (\text{k2}\cdot
+\text{k3}) D^5+44 (\text{k1}\cdot \text{k3})^2 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^5-24 (\text{k1}\cdot \text{k3})^3 \text{k3}^2 D^5-30 \text{k2}^6
+\text{k3}^2 D^5-24 (\text{k2}\cdot \text{k3})^3 \text{k3}^2 D^5+116 (\text{k1}\cdot \text{k3}) \text{k2}^4 \text{k3}^2 D^5+28 \text{k2}^2 (\text{k2}\cdot
+\text{k3})^2 \text{k3}^2 D^5+8 (\text{k1}\cdot \text{k3})^2 \text{k2}^2 \text{k3}^2 D^5+48 \text{k2}^4 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^5-124
+(\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^5-44 (\text{k1}\cdot \text{k3})^4 D^4-44 (\text{k2}\cdot \text{k3})^4
+D^4-154 (\text{k1}\cdot \text{k3}) \text{k2}^6 D^4-116 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3})^3 D^4+204 \text{k2}^2 (\text{k2}\cdot
+\text{k3})^3 D^4+154 \text{k2}^2 \text{k3}^6 D^4-67 (\text{k1}\cdot \text{k3})^2 \text{k2}^4 D^4+76 (\text{k1}\cdot \text{k3})^2 (\text{k2}\cdot
+\text{k3})^2 D^4-152 \text{k2}^4 (\text{k2}\cdot \text{k3})^2 D^4+6 (\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot \text{k3})^2 D^4-152 (\text{k1}\cdot
+\text{k3})^2 \text{k3}^4 D^4+371 \text{k2}^4 \text{k3}^4 D^4-152 (\text{k2}\cdot \text{k3})^2 \text{k3}^4 D^4-358 (\text{k1}\cdot \text{k3}) \text{k2}^2
+\text{k3}^4 D^4+152 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3}) \text{k3}^4 D^4-208 \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^4
+D^4+384 (\text{k1}\cdot \text{k3})^3 \text{k2}^2 D^4-116 (\text{k1}\cdot \text{k3})^3 (\text{k2}\cdot \text{k3}) D^4+360 (\text{k1}\cdot \text{k3})
+\text{k2}^4 (\text{k2}\cdot \text{k3}) D^4-122 (\text{k1}\cdot \text{k3})^2 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^4+204 (\text{k1}\cdot \text{k3})^3
+\text{k3}^2 D^4+154 \text{k2}^6 \text{k3}^2 D^4+204 (\text{k2}\cdot \text{k3})^3 \text{k3}^2 D^4-638 (\text{k1}\cdot \text{k3}) \text{k2}^4 \text{k3}^2
+D^4-2 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^4-312 \text{k2}^2 (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^4-328 (\text{k1}\cdot
+\text{k3})^2 \text{k2}^2 \text{k3}^2 D^4-2 (\text{k1}\cdot \text{k3})^2 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^4-208 \text{k2}^4 (\text{k2}\cdot
+\text{k3}) \text{k3}^2 D^4+728 (\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^4+144 (\text{k1}\cdot \text{k3})^4
+D^3+144 (\text{k2}\cdot \text{k3})^4 D^3+302 (\text{k1}\cdot \text{k3}) \text{k2}^6 D^3+204 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3})^3
+D^3-492 \text{k2}^2 (\text{k2}\cdot \text{k3})^3 D^3-302 \text{k2}^2 \text{k3}^6 D^3+1399 (\text{k1}\cdot \text{k3})^2 \text{k2}^4 D^3-104 (\text{k1}\cdot
+\text{k3})^2 (\text{k2}\cdot \text{k3})^2 D^3+358 \text{k2}^4 (\text{k2}\cdot \text{k3})^2 D^3+124 (\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot
+\text{k3})^2 D^3+358 (\text{k1}\cdot \text{k3})^2 \text{k3}^4 D^3-597 \text{k2}^4 \text{k3}^4 D^3+358 (\text{k2}\cdot \text{k3})^2 \text{k3}^4 D^3+716
+(\text{k1}\cdot \text{k3}) \text{k2}^2 \text{k3}^4 D^3-358 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3}) \text{k3}^4 D^3+380 \text{k2}^2
+(\text{k2}\cdot \text{k3}) \text{k3}^4 D^3-1470 (\text{k1}\cdot \text{k3})^3 \text{k2}^2 D^3+204 (\text{k1}\cdot \text{k3})^3 (\text{k2}\cdot \text{k3})
+D^3-738 (\text{k1}\cdot \text{k3}) \text{k2}^4 (\text{k2}\cdot \text{k3}) D^3-560 (\text{k1}\cdot \text{k3})^2 \text{k2}^2 (\text{k2}\cdot \text{k3})
+D^3-492 (\text{k1}\cdot \text{k3})^3 \text{k3}^2 D^3-302 \text{k2}^6 \text{k3}^2 D^3-492 (\text{k2}\cdot \text{k3})^3 \text{k3}^2 D^3+1004 (\text{k1}\cdot
+\text{k3}) \text{k2}^4 \text{k3}^2 D^3+22 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^3+614 \text{k2}^2 (\text{k2}\cdot
+\text{k3})^2 \text{k3}^2 D^3+1710 (\text{k1}\cdot \text{k3})^2 \text{k2}^2 \text{k3}^2 D^3+22 (\text{k1}\cdot \text{k3})^2 (\text{k2}\cdot \text{k3})
+\text{k3}^2 D^3+380 \text{k2}^4 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^3-1374 (\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot \text{k3})
+\text{k3}^2 D^3+4 \left(D^3-11 D^2+36 D-36\right) (\text{k1}\cdot \text{k2})^4 D^2-144 (\text{k1}\cdot \text{k3})^4 D^2-144 (\text{k2}\cdot \text{k3})^4
+D^2-72 (\text{k1}\cdot \text{k3}) \text{k2}^6 D^2+144 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3})^3 D^2+144 \text{k2}^2 (\text{k2}\cdot
+\text{k3})^3 D^2+72 \text{k2}^2 \text{k3}^6 D^2-3728 (\text{k1}\cdot \text{k3})^2 \text{k2}^4 D^2-144 (\text{k1}\cdot \text{k3})^2 (\text{k2}\cdot
+\text{k3})^2 D^2-72 \text{k2}^4 (\text{k2}\cdot \text{k3})^2 D^2-720 (\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot \text{k3})^2 D^2-72 (\text{k1}\cdot
+\text{k3})^2 \text{k3}^4 D^2-372 \text{k2}^4 \text{k3}^4 D^2-72 (\text{k2}\cdot \text{k3})^2 \text{k3}^4 D^2-144 (\text{k1}\cdot \text{k3}) \text{k2}^2
+\text{k3}^4 D^2+72 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3}) \text{k3}^4 D^2-144 \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^4 D^2+1944
+(\text{k1}\cdot \text{k3})^3 \text{k2}^2 D^2+144 (\text{k1}\cdot \text{k3})^3 (\text{k2}\cdot \text{k3}) D^2+216 (\text{k1}\cdot \text{k3}) \text{k2}^4
+(\text{k2}\cdot \text{k3}) D^2+2248 (\text{k1}\cdot \text{k3})^2 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^2+144 (\text{k1}\cdot \text{k3})^3 \text{k3}^2
+D^2+72 \text{k2}^6 \text{k3}^2 D^2+144 (\text{k2}\cdot \text{k3})^3 \text{k3}^2 D^2+816 (\text{k1}\cdot \text{k3}) \text{k2}^4 \text{k3}^2 D^2-72
+(\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^2+504 \text{k2}^2 (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^2-2780 (\text{k1}\cdot
+\text{k3})^2 \text{k2}^2 \text{k3}^2 D^2-72 (\text{k1}\cdot \text{k3})^2 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^2-144 \text{k2}^4 (\text{k2}\cdot
+\text{k3}) \text{k3}^2 D^2-216 (\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^2-312 (\text{k1}\cdot \text{k3}) \text{k2}^6
+D-432 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3})^3 D+432 \text{k2}^2 (\text{k2}\cdot \text{k3})^3 D+312 \text{k2}^2 \text{k3}^6 D+1716
+(\text{k1}\cdot \text{k3})^2 \text{k2}^4 D+288 (\text{k1}\cdot \text{k3})^2 (\text{k2}\cdot \text{k3})^2 D-360 \text{k2}^4 (\text{k2}\cdot \text{k3})^2
+D+480 (\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot \text{k3})^2 D-360 (\text{k1}\cdot \text{k3})^2 \text{k3}^4 D+996 \text{k2}^4 \text{k3}^4
+D-360 (\text{k2}\cdot \text{k3})^2 \text{k3}^4 D-768 (\text{k1}\cdot \text{k3}) \text{k2}^2 \text{k3}^4 D+360 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot
+\text{k3}) \text{k3}^4 D-336 \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^4 D-200 (\text{k1}\cdot \text{k3})^3 \text{k2}^2 D-432 (\text{k1}\cdot
+\text{k3})^3 (\text{k2}\cdot \text{k3}) D+696 (\text{k1}\cdot \text{k3}) \text{k2}^4 (\text{k2}\cdot \text{k3}) D-1072 (\text{k1}\cdot \text{k3})^2
+\text{k2}^2 (\text{k2}\cdot \text{k3}) D+432 (\text{k1}\cdot \text{k3})^3 \text{k3}^2 D+312 \text{k2}^6 \text{k3}^2 D+432 (\text{k2}\cdot \text{k3})^3
+\text{k3}^2 D-1824 (\text{k1}\cdot \text{k3}) \text{k2}^4 \text{k3}^2 D+72 (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D-1128
+\text{k2}^2 (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D+568 (\text{k1}\cdot \text{k3})^2 \text{k2}^2 \text{k3}^2 D+72 (\text{k1}\cdot \text{k3})^2
+(\text{k2}\cdot \text{k3}) \text{k3}^2 D-336 \text{k2}^4 (\text{k2}\cdot \text{k3}) \text{k3}^2 D+1800 (\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot
+\text{k3}) \text{k3}^2 D+2 \left(D^5-15 D^4+77 D^3-151 D^2+36 D+156\right) \text{k1}^6 \left(\text{k2}^2-\text{k2}\cdot \text{k3}+\text{k3}^2\right)
+D+1392 (\text{k1}\cdot \text{k3})^2 \text{k2}^4+576 (\text{k1}\cdot \text{k3}) \text{k2}^2 (\text{k2}\cdot \text{k3})^2+576 \text{k2}^4 \text{k3}^4-96
+(\text{k1}\cdot \text{k3})^3 \text{k2}^2-1248 (\text{k1}\cdot \text{k3})^2 \text{k2}^2 (\text{k2}\cdot \text{k3})-1152 (\text{k1}\cdot \text{k3})
+\text{k2}^4 \text{k3}^2-576 \text{k2}^2 (\text{k2}\cdot \text{k3})^2 \text{k3}^2+432 (\text{k1}\cdot \text{k3})^2 \text{k2}^2 \text{k3}^2+576 (\text{k1}\cdot
+\text{k3}) \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^2+2 (\text{k1}\cdot \text{k2})^3 \left(8 (\text{k2}\cdot \text{k3}) D^5-17 \text{k3}^2
+D^5-58 (\text{k2}\cdot \text{k3}) D^4+192 \text{k3}^2 D^4+102 (\text{k2}\cdot \text{k3}) D^3-735 \text{k3}^2 D^3+72 (\text{k2}\cdot \text{k3}) D^2+972
+\text{k3}^2 D^2+2 \left(4 D^4-29 D^3+51 D^2+36 D-108\right) (\text{k1}\cdot \text{k3}) D-6 \left(2 D^4-17 D^3+41 D^2-12 D-36\right) \text{k2}^2 D-216
+(\text{k2}\cdot \text{k3}) D-100 \text{k3}^2 D-48 \text{k3}^2\right)+\text{k1}^4 \left(4 \text{k2}^4 D^6+2 (\text{k2}\cdot \text{k3})^2 D^6+4 \text{k3}^4
+D^6-6 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^6+8 \text{k2}^2 \text{k3}^2 D^6-6 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^6-70 \text{k2}^4 D^5-28
+(\text{k2}\cdot \text{k3})^2 D^5-70 \text{k3}^4 D^5+116 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^5-158 \text{k2}^2 \text{k3}^2 D^5+116 (\text{k2}\cdot
+\text{k3}) \text{k3}^2 D^5+371 \text{k2}^4 D^4-67 (\text{k2}\cdot \text{k3})^2 D^4+371 \text{k3}^4 D^4-638 \text{k2}^2 (\text{k2}\cdot \text{k3})
+D^4+1074 \text{k2}^2 \text{k3}^2 D^4-638 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^4-597 \text{k2}^4 D^3+1399 (\text{k2}\cdot \text{k3})^2 D^3-597
+\text{k3}^4 D^3+1004 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^3-2978 \text{k2}^2 \text{k3}^2 D^3+1004 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^3-372
+\text{k2}^4 D^2-3728 (\text{k2}\cdot \text{k3})^2 D^2-372 \text{k3}^4 D^2+816 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^2+2468 \text{k2}^2 \text{k3}^2
+D^2+816 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^2+2 \left(9 D^4-76 D^3+179 D^2-36 D-180\right) (\text{k1}\cdot \text{k2})^2 D+2 \left(9 D^4-76 D^3+179
+D^2-36 D-180\right) (\text{k1}\cdot \text{k3})^2 D+996 \text{k2}^4 D+1716 (\text{k2}\cdot \text{k3})^2 D+996 \text{k3}^4 D-1824 \text{k2}^2 (\text{k2}\cdot
+\text{k3}) D+1176 \text{k2}^2 \text{k3}^2 D-1824 (\text{k2}\cdot \text{k3}) \text{k3}^2 D-2 (\text{k1}\cdot \text{k2}) \left(-2 (\text{k2}\cdot \text{k3})
+D^5+2 \text{k3}^2 D^5+33 (\text{k2}\cdot \text{k3}) D^4-33 \text{k3}^2 D^4-180 (\text{k2}\cdot \text{k3}) D^3+179 \text{k3}^2 D^3+369 (\text{k2}\cdot
+\text{k3}) D^2-358 \text{k3}^2 D^2-108 (\text{k2}\cdot \text{k3}) D+72 \text{k3}^2 D+\left(9 D^4-76 D^3+179 D^2-36 D-180\right) (\text{k1}\cdot \text{k3})+2
+\left(D^5-12 D^4+52 D^3-95 D^2+36 D+84\right) \text{k2}^2-348 (\text{k2}\cdot \text{k3})+384 \text{k3}^2\right) D-2 (\text{k1}\cdot \text{k3}) \left(\left(2
+D^5-33 D^4+179 D^3-358 D^2+72 D+384\right) \text{k2}^2-\left(2 D^5-33 D^4+180 D^3-369 D^2+108 D+348\right) (\text{k2}\cdot \text{k3})+2 \left(D^5-12
+D^4+52 D^3-95 D^2+36 D+84\right) \text{k3}^2\right) D+576 \text{k2}^4+1392 (\text{k2}\cdot \text{k3})^2+576 \text{k3}^4-1152 \text{k2}^2 (\text{k2}\cdot
+\text{k3})+336 \text{k2}^2 \text{k3}^2-1152 (\text{k2}\cdot \text{k3}) \text{k3}^2\right)+(\text{k1}\cdot \text{k2})^2 \left(2 \text{k3}^4 D^6-2
+(\text{k2}\cdot \text{k3}) \text{k3}^2 D^6-12 (\text{k2}\cdot \text{k3})^2 D^5-28 \text{k3}^4 D^5+44 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^5+76
+(\text{k2}\cdot \text{k3})^2 D^4-67 \text{k3}^4 D^4-122 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^4-104 (\text{k2}\cdot \text{k3})^2 D^3+1399 \text{k3}^4
+D^3-560 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^3-144 (\text{k2}\cdot \text{k3})^2 D^2-3728 \text{k3}^4 D^2+2248 (\text{k2}\cdot \text{k3}) \text{k3}^2
+D^2-4 \left(3 D^4-19 D^3+26 D^2+36 D-72\right) (\text{k1}\cdot \text{k3})^2 D+2 \left(9 D^4-76 D^3+179 D^2-36 D-180\right) \text{k2}^4 D+288 (\text{k2}\cdot
+\text{k3})^2 D+1716 \text{k3}^4 D-1072 (\text{k2}\cdot \text{k3}) \text{k3}^2 D+1392 \text{k3}^4-1248 (\text{k2}\cdot \text{k3}) \text{k3}^2-2 (\text{k1}\cdot
+\text{k3}) \left(\left(D^6-4 D^5-3 D^4-62 D^3+360 D^2-240 D-288\right) \text{k2}^2-\left(D^6-17 D^5-30 D^4+780 D^3-2060 D^2+888 D+672\right) (\text{k2}\cdot
+\text{k3})+\left(D^6-22 D^5+61 D^4+280 D^3-1124 D^2+536 D+624\right) \text{k3}^2\right)+2 \text{k2}^2 \left(\left(D^6+4 D^5-164 D^4+855 D^3-1390
+D^2+284 D+216\right) \text{k3}^2-D \left(D^3-11 D^2+36 D-36\right) (\text{k2}\cdot \text{k3})\right)\right)-2 (\text{k1}\cdot \text{k2}) \left(\text{k3}^6
+D^6-2 (\text{k2}\cdot \text{k3}) \text{k3}^4 D^6+(\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^6-8 (\text{k2}\cdot \text{k3})^3 D^5-15 \text{k3}^6 D^5+33
+(\text{k2}\cdot \text{k3}) \text{k3}^4 D^5-4 (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^5+58 (\text{k2}\cdot \text{k3})^3 D^4+77 \text{k3}^6 D^4-180
+(\text{k2}\cdot \text{k3}) \text{k3}^4 D^4-3 (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^4-102 (\text{k2}\cdot \text{k3})^3 D^3-151 \text{k3}^6 D^3+369
+(\text{k2}\cdot \text{k3}) \text{k3}^4 D^3-62 (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^3-72 (\text{k2}\cdot \text{k3})^3 D^2+36 \text{k3}^6 D^2-108
+(\text{k2}\cdot \text{k3}) \text{k3}^4 D^2+360 (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^2-2 \left(4 D^4-29 D^3+51 D^2+36 D-108\right) (\text{k1}\cdot
+\text{k3})^3 D+216 (\text{k2}\cdot \text{k3})^3 D+156 \text{k3}^6 D-348 (\text{k2}\cdot \text{k3}) \text{k3}^4 D-240 (\text{k2}\cdot \text{k3})^2
+\text{k3}^2 D+\text{k2}^4 \left(\left(9 D^4-76 D^3+179 D^2-36 D-180\right) (\text{k2}\cdot \text{k3})+\left(2 D^5-33 D^4+179 D^3-358 D^2+72 D+384\right)
+\text{k3}^2\right) D-288 (\text{k2}\cdot \text{k3})^2 \text{k3}^2+(\text{k1}\cdot \text{k3})^2 \left(\left(D^6-22 D^5+61 D^4+280 D^3-1124 D^2+536
+D+624\right) \text{k2}^2-\left(D^6-17 D^5-30 D^4+780 D^3-2060 D^2+888 D+672\right) (\text{k2}\cdot \text{k3})+\left(D^6-4 D^5-3 D^4-62 D^3+360 D^2-240
+D-288\right) \text{k3}^2\right)+\text{k2}^2 \left(D \left(D^3-11 D^2+36 D-36\right) (\text{k2}\cdot \text{k3})^2+\left(-3 D^6+62 D^5-364 D^4+687
+D^3+108 D^2-900 D-288\right) \text{k3}^2 (\text{k2}\cdot \text{k3})+\left(3 D^6-58 D^5+319 D^4-502 D^3-408 D^2+912 D+576\right) \text{k3}^4\right)+(\text{k1}\cdot
+\text{k3}) \left(-D \left(2 D^5-33 D^4+180 D^3-369 D^2+108 D+348\right) \text{k2}^4+\left(\left(3 D^6-64 D^5+196 D^4+767 D^3-3464 D^2+2236 D+1296\right)
+(\text{k2}\cdot \text{k3})+\left(-4 D^6+91 D^5-531 D^4+918 D^3+380 D^2-1112 D-1056\right) \text{k3}^2\right) \text{k2}^2-\left(D^6-17 D^5-30 D^4+780
+D^3-2060 D^2+888 D+672\right) (\text{k2}\cdot \text{k3})^2-D \left(2 D^5-33 D^4+180 D^3-369 D^2+108 D+348\right) \text{k3}^4+\left(3 D^6-64 D^5+196
+D^4+767 D^3-3464 D^2+2236 D+1296\right) (\text{k2}\cdot \text{k3}) \text{k3}^2\right)\right)+2 \text{k1}^2 \left(\text{k2}^6 D^6+\text{k3}^6 D^6+\text{k2}^2
+(\text{k2}\cdot \text{k3})^2 D^6+4 \text{k2}^2 \text{k3}^4 D^6-2 (\text{k2}\cdot \text{k3}) \text{k3}^4 D^6-2 \text{k2}^4 (\text{k2}\cdot \text{k3})
+D^6+4 \text{k2}^4 \text{k3}^2 D^6+(\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^6-5 \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^6-15 \text{k2}^6
+D^5-17 (\text{k2}\cdot \text{k3})^3 D^5-15 \text{k3}^6 D^5+4 \text{k2}^2 (\text{k2}\cdot \text{k3})^2 D^5-79 \text{k2}^2 \text{k3}^4 D^5+33 (\text{k2}\cdot
+\text{k3}) \text{k3}^4 D^5+33 \text{k2}^4 (\text{k2}\cdot \text{k3}) D^5-79 \text{k2}^4 \text{k3}^2 D^5+4 (\text{k2}\cdot \text{k3})^2 \text{k3}^2
+D^5+93 \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^5+77 \text{k2}^6 D^4+192 (\text{k2}\cdot \text{k3})^3 D^4+77 \text{k3}^6 D^4-164 \text{k2}^2
+(\text{k2}\cdot \text{k3})^2 D^4+537 \text{k2}^2 \text{k3}^4 D^4-179 (\text{k2}\cdot \text{k3}) \text{k3}^4 D^4-179 \text{k2}^4 (\text{k2}\cdot \text{k3})
+D^4+537 \text{k2}^4 \text{k3}^2 D^4-164 (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^4-573 \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^4-151
+\text{k2}^6 D^3-735 (\text{k2}\cdot \text{k3})^3 D^3-151 \text{k3}^6 D^3+855 \text{k2}^2 (\text{k2}\cdot \text{k3})^2 D^3-1489 \text{k2}^2 \text{k3}^4
+D^3+358 (\text{k2}\cdot \text{k3}) \text{k3}^4 D^3+358 \text{k2}^4 (\text{k2}\cdot \text{k3}) D^3-1489 \text{k2}^4 \text{k3}^2 D^3+855 (\text{k2}\cdot
+\text{k3})^2 \text{k3}^2 D^3+1377 \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^3+36 \text{k2}^6 D^2+972 (\text{k2}\cdot \text{k3})^3 D^2+36
+\text{k3}^6 D^2-1390 \text{k2}^2 (\text{k2}\cdot \text{k3})^2 D^2+1234 \text{k2}^2 \text{k3}^4 D^2-72 (\text{k2}\cdot \text{k3}) \text{k3}^4 D^2-72
+\text{k2}^4 (\text{k2}\cdot \text{k3}) D^2+1234 \text{k2}^4 \text{k3}^2 D^2-1390 (\text{k2}\cdot \text{k3})^2 \text{k3}^2 D^2-780 \text{k2}^2 (\text{k2}\cdot
+\text{k3}) \text{k3}^2 D^2-6 \left(2 D^4-17 D^3+41 D^2-12 D-36\right) (\text{k1}\cdot \text{k2})^3 D-6 \left(2 D^4-17 D^3+41 D^2-12 D-36\right) (\text{k1}\cdot
+\text{k3})^3 D+156 \text{k2}^6 D-100 (\text{k2}\cdot \text{k3})^3 D+156 \text{k3}^6 D+284 \text{k2}^2 (\text{k2}\cdot \text{k3})^2 D+588 \text{k2}^2
+\text{k3}^4 D-384 (\text{k2}\cdot \text{k3}) \text{k3}^4 D-384 \text{k2}^4 (\text{k2}\cdot \text{k3}) D+588 \text{k2}^4 \text{k3}^2 D+284 (\text{k2}\cdot
+\text{k3})^2 \text{k3}^2 D-780 \text{k2}^2 (\text{k2}\cdot \text{k3}) \text{k3}^2 D-48 (\text{k2}\cdot \text{k3})^3+216 \text{k2}^2 (\text{k2}\cdot
+\text{k3})^2+168 \text{k2}^2 \text{k3}^4+168 \text{k2}^4 \text{k3}^2+216 (\text{k2}\cdot \text{k3})^2 \text{k3}^2-432 \text{k2}^2 (\text{k2}\cdot
+\text{k3}) \text{k3}^2+(\text{k1}\cdot \text{k2})^2 \left(-(\text{k2}\cdot \text{k3}) D^6+\text{k3}^2 D^6+4 (\text{k2}\cdot \text{k3}) D^5+4 \text{k3}^2
+D^5+3 (\text{k2}\cdot \text{k3}) D^4-164 \text{k3}^2 D^4+62 (\text{k2}\cdot \text{k3}) D^3+855 \text{k3}^2 D^3-360 (\text{k2}\cdot \text{k3}) D^2-1390
+\text{k3}^2 D^2-\left(D^3-11 D^2+36 D-36\right) (\text{k1}\cdot \text{k3}) D+240 (\text{k2}\cdot \text{k3}) D+284 \text{k3}^2 D+\left(D^6+14 D^5-156
+D^4+307 D^3+252 D^2-564 D-288\right) \text{k2}^2+288 (\text{k2}\cdot \text{k3})+216 \text{k3}^2\right)+(\text{k1}\cdot \text{k3})^2 \left(\left(D^6+4
+D^5-164 D^4+855 D^3-1390 D^2+284 D+216\right) \text{k2}^2+\left(-D^6+4 D^5+3 D^4+62 D^3-360 D^2+240 D+288\right) (\text{k2}\cdot \text{k3})+\left(D^6+14
+D^5-156 D^4+307 D^3+252 D^2-564 D-288\right) \text{k3}^2\right)+(\text{k1}\cdot \text{k2}) \left(-(\text{k2}\cdot \text{k3})^2 D^6-3 \text{k3}^4
+D^6+4 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^6+22 (\text{k2}\cdot \text{k3})^2 D^5+58 \text{k3}^4 D^5-91 (\text{k2}\cdot \text{k3}) \text{k3}^2
+D^5-61 (\text{k2}\cdot \text{k3})^2 D^4-319 \text{k3}^4 D^4+531 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^4-280 (\text{k2}\cdot \text{k3})^2 D^3+502
+\text{k3}^4 D^3-918 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^3+1124 (\text{k2}\cdot \text{k3})^2 D^2+408 \text{k3}^4 D^2-380 (\text{k2}\cdot \text{k3})
+\text{k3}^2 D^2-\left(D^3-11 D^2+36 D-36\right) (\text{k1}\cdot \text{k3})^2 D-2 \left(D^5-12 D^4+52 D^3-95 D^2+36 D+84\right) \text{k2}^4 D-536
+(\text{k2}\cdot \text{k3})^2 D-912 \text{k3}^4 D+1112 (\text{k2}\cdot \text{k3}) \text{k3}^2 D-624 (\text{k2}\cdot \text{k3})^2-576 \text{k3}^4+1056
+(\text{k2}\cdot \text{k3}) \text{k3}^2+(\text{k1}\cdot \text{k3}) \left(\left(3 D^6-62 D^5+364 D^4-687 D^3-108 D^2+900 D+288\right) \text{k2}^2-\left(3
+D^6-64 D^5+196 D^4+767 D^3-3464 D^2+2236 D+1296\right) (\text{k2}\cdot \text{k3})+\left(3 D^6-62 D^5+364 D^4-687 D^3-108 D^2+900 D+288\right) \text{k3}^2\right)+\text{k2}^2
+\left(\left(3 D^6-62 D^5+364 D^4-687 D^3-108 D^2+900 D+288\right) (\text{k2}\cdot \text{k3})-\left(5 D^6-93 D^5+573 D^4-1377 D^3+780 D^2+780 D+432\right)
+\text{k3}^2\right)\right)-(\text{k1}\cdot \text{k3}) \left(\left(3 D^6-58 D^5+319 D^4-502 D^3-408 D^2+912 D+576\right) \text{k2}^4+\left(\left(-4
+D^6+91 D^5-531 D^4+918 D^3+380 D^2-1112 D-1056\right) (\text{k2}\cdot \text{k3})+\left(5 D^6-93 D^5+573 D^4-1377 D^3+780 D^2+780 D+432\right) \text{k3}^2\right)
+\text{k2}^2+\left(D^6-22 D^5+61 D^4+280 D^3-1124 D^2+536 D+624\right) (\text{k2}\cdot \text{k3})^2+2 D \left(D^5-12 D^4+52 D^3-95 D^2+36 D+84\right)
+\text{k3}^4+\left(-3 D^6+62 D^5-364 D^4+687 D^3+108 D^2-900 D-288\right) (\text{k2}\cdot \text{k3}) \text{k3}^2\right)\right)\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{tortuga} = \text{Get}[\text{{``}./Descargas/TesisMP/Diagramas/DiagramaTortuga.txt{''}}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\frac{1}{16 (D-2)^2 p^2 \text{p1}^2.\text{p2}^2.(\text{p1}+\text{p2})^2}D K^4 \left(2 \left(9 D^5-124 D^4+587 D^3-1052 D^2+268 D+672\right)
+(p\cdot \text{p1})^2+(D-3) \left(2 \left(D^5-11 D^4-84 D^3+540 D^2-232 D-688\right) (\text{p1}\cdot \text{p2})^2+\text{p1}^2 \left(2 \left(2 D^5-35
+D^4+81 D^3+92 D^2+4 D-144\right) (\text{p1}\cdot \text{p2})+\left(4 D^5-83 D^4+411 D^3-804 D^2+476 D+944\right) \text{p2}^2\right)+2 \left(2 D^5-35
+D^4+81 D^3+92 D^2+4 D-144\right) \text{p2}^2 (\text{p1}\cdot \text{p2})+\left(2 D^5-35 D^4+81 D^3+92 D^2+4 D-144\right) \text{p1}^4+\left(2 D^5-35
+D^4+81 D^3+92 D^2+4 D-144\right) \text{p2}^4\right)+2 \left(9 D^5-124 D^4+587 D^3-1052 D^2+268 D+672\right) (p\cdot \text{p2}) (p\cdot \text{p1}+p\cdot
+\text{p2})+\left(2 D^6-51 D^5+364 D^4-1131 D^3+1628 D^2-636 D-896\right) p^2 \left(\text{p1}\cdot \text{p2}+\text{p1}^2+\text{p2}^2\right)\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{cilindro} = \text{Get}[\text{{``}./Descargas/TesisMP/Diagramas/CilindroFinal.txt{''}}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(-\left(\left(K^4 \left(2 D^2 \left(6 D^4-40 D^3+61 D^2+39 D-66\right) \text{k1}^8+4 \left(6 \text{k2}^2 D^6-(\text{k2}\cdot \text{k3})
+D^6+6 \text{k3}^2 D^6-62 \text{k2}^2 D^5+15 (\text{k2}\cdot \text{k3}) D^5-62 \text{k3}^2 D^5+223 \text{k2}^2 D^4-73 (\text{k2}\cdot \text{k3}) D^4+223
+\text{k3}^2 D^4-255 \text{k2}^2 D^3+117 (\text{k2}\cdot \text{k3}) D^3-255 \text{k3}^2 D^3-220 \text{k2}^2 D^2+34 (\text{k2}\cdot \text{k3}) D^2-220
+\text{k3}^2 D^2+(D-1) \left(-2 D^2+5 D+6\right)^2 (\text{k1}\cdot \text{k2}) D+(D-1) \left(-2 D^2+5 D+6\right)^2 (\text{k1}\cdot \text{k3}) D+444
+\text{k2}^2 D-132 (\text{k2}\cdot \text{k3}) D+444 \text{k3}^2 D+192 \text{k2}^2-56 (\text{k2}\cdot \text{k3})+192 \text{k3}^2\right) \text{k1}^6+\left(12
+\text{k2}^4 D^6-7 (\text{k2}\cdot \text{k3})^2 D^6+12 \text{k3}^4 D^6-4 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^6+44 \text{k2}^2 \text{k3}^2 D^6-4
+(\text{k2}\cdot \text{k3}) \text{k3}^2 D^6-116 \text{k2}^4 D^5+190 (\text{k2}\cdot \text{k3})^2 D^5-116 \text{k3}^4 D^5+56 \text{k2}^2 (\text{k2}\cdot
+\text{k3}) D^5-604 \text{k2}^2 \text{k3}^2 D^5+56 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^5+404 \text{k2}^4 D^4-1547 (\text{k2}\cdot \text{k3})^2
+D^4+404 \text{k3}^4 D^4-268 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^4+3216 \text{k2}^2 \text{k3}^2 D^4-268 (\text{k2}\cdot \text{k3}) \text{k3}^2
+D^4-564 \text{k2}^4 D^3+5204 (\text{k2}\cdot \text{k3})^2 D^3-564 \text{k3}^4 D^3+488 \text{k2}^2 (\text{k2}\cdot \text{k3}) D^3-7780 \text{k2}^2
+\text{k3}^2 D^3+488 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^3+72 \text{k2}^4 D^2-6540 (\text{k2}\cdot \text{k3})^2 D^2+72 \text{k3}^4 D^2-144 \text{k2}^2
+(\text{k2}\cdot \text{k3}) D^2+6648 \text{k2}^2 \text{k3}^2 D^2-144 (\text{k2}\cdot \text{k3}) \text{k3}^2 D^2+480 \text{k2}^4 D+320 (\text{k2}\cdot
+\text{k3})^2 D+480 \text{k3}^4 D-288 \text{k2}^2 (\text{k2}\cdot \text{k3}) D+1936 \text{k2}^2 \text{k3}^2 D-288 (\text{k2}\cdot \text{k3}) \text{k3}^2
+D+4 \left(27 D^5-196 D^4+347 D^3+190 D^2-504 D-192\right) (\text{k1}\cdot \text{k2})^2+4 \left(27 D^5-196 D^4+347 D^3+190 D^2-504 D-192\right) (\text{k1}\cdot
+\text{k3})^2+1600 (\text{k2}\cdot \text{k3})^2-736 \text{k2}^2 \text{k3}^2+4 (\text{k1}\cdot \text{k2}) \left(-2 (\text{k2}\cdot \text{k3}) D^6+9
+\text{k3}^2 D^6+34 (\text{k2}\cdot \text{k3}) D^5-91 \text{k3}^2 D^5-178 (\text{k2}\cdot \text{k3}) D^4+325 \text{k3}^2 D^4+310 (\text{k2}\cdot \text{k3})
+D^3-401 \text{k3}^2 D^3+36 (\text{k2}\cdot \text{k3}) D^2-230 \text{k3}^2 D^2+2 \left(2 D^5-15 D^4+35 D^3-24 D^2-12 D+48\right) \text{k2}^2 D-312
+(\text{k2}\cdot \text{k3}) D+644 \text{k3}^2 D+2 \left(4 D^6-27 D^5+45 D^4+8 D^3-30 D^2+24 D+24\right) (\text{k1}\cdot \text{k3})-112 (\text{k2}\cdot
+\text{k3})+232 \text{k3}^2\right)+4 (\text{k1}\cdot \text{k3}) \left(\left(9 D^6-91 D^5+325 D^4-401 D^3-230 D^2+644 D+232\right) \text{k2}^2-2 \left(\left(D^6-17
+D^5+89 D^4-155 D^3-18 D^2+156 D+56\right) (\text{k2}\cdot \text{k3})+D \left(-2 D^5+15 D^4-35 D^3+24 D^2+12 D-48\right) \text{k3}^2\right)\right)\right)
+\text{k1}^4+2 \left(4 D \left(4 D^4-29 D^3+57 D^2+6 D-72\right) (\text{k1}\cdot \text{k2})^3+\left(2 (\text{k2}\cdot \text{k3}) D^6+4 \text{k3}^2
+D^6-4 (\text{k2}\cdot \text{k3}) D^5+41 \text{k3}^2 D^5-58 (\text{k2}\cdot \text{k3}) D^4-677 \text{k3}^2 D^4+212 (\text{k2}\cdot \text{k3}) D^3+2674
+\text{k3}^2 D^3-120 (\text{k2}\cdot \text{k3}) D^2-3660 \text{k3}^2 D^2-4 \left(D^5-14 D^4+66 D^3-117 D^2+30 D+72\right) \text{k2}^2 D-144 (\text{k2}\cdot
+\text{k3}) D+616 \text{k3}^2 D+4 \left(2 D^6-3 D^5-55 D^4+144 D^3+68 D^2-224 D-64\right) (\text{k1}\cdot \text{k3})+832 \text{k3}^2\right) (\text{k1}\cdot
+\text{k2})^2+\left(4 \left(2 D^6-3 D^5-55 D^4+144 D^3+68 D^2-224 D-64\right) (\text{k1}\cdot \text{k3})^2+4 \left(\left(4 D^6-32 D^5+82 D^4-74 D^3+88
+D\right) \text{k2}^2-\left(11 D^5-178 D^4+909 D^3-1630 D^2+440 D+512\right) (\text{k2}\cdot \text{k3})+2 D \left(2 D^5-16 D^4+41 D^3-37 D^2+44\right)
+\text{k3}^2\right) (\text{k1}\cdot \text{k3})+D \left(2 \left(D^5+5 D^4-109 D^3+421 D^2-522 D+72\right) (\text{k2}\cdot \text{k3})^2-\left(5 D^5-70
+D^4+337 D^3-632 D^2+252 D+288\right) \text{k3}^2 (\text{k2}\cdot \text{k3})+2 \left(5 D^5-46 D^4+147 D^3-182 D^2+4 D+184\right) \text{k3}^4-2 \text{k2}^2
+\left(2 \left(D^5-14 D^4+67 D^3-122 D^2+36 D+72\right) (\text{k2}\cdot \text{k3})-\left(9 D^5-100 D^4+426 D^3-837 D^2+590 D+248\right) \text{k3}^2\right)\right)\right)
+(\text{k1}\cdot \text{k2})+4 D \left(4 D^4-29 D^3+57 D^2+6 D-72\right) (\text{k1}\cdot \text{k3})^3+(\text{k1}\cdot \text{k3})^2 \left(\left(4 D^6+41
+D^5-677 D^4+2674 D^3-3660 D^2+616 D+832\right) \text{k2}^2+2 D \left(D^2-5 D+6\right) \left(\left(D^3+3 D^2-20 D-12\right) (\text{k2}\cdot \text{k3})-2
+\left(D^3-9 D^2+15 D+12\right) \text{k3}^2\right)\right)+D (\text{k1}\cdot \text{k3}) \left(2 \left(5 D^5-46 D^4+147 D^3-182 D^2+4 D+184\right) \text{k2}^4+\left(2
+\left(9 D^5-100 D^4+426 D^3-837 D^2+590 D+248\right) \text{k3}^2-\left(5 D^5-70 D^4+337 D^3-632 D^2+252 D+288\right) (\text{k2}\cdot \text{k3})\right)
+\text{k2}^2+2 (D-3) (\text{k2}\cdot \text{k3}) \left(\left(D^4+8 D^3-85 D^2+166 D-24\right) (\text{k2}\cdot \text{k3})-2 \left(D^4-11 D^3+34 D^2-20
+D-24\right) \text{k3}^2\right)\right)+D \left(\left(10 D^5-121 D^4+571 D^3-1260 D^2+1056 D+200\right) \text{k3}^2 \text{k2}^4+\left(-D \left(D^2-8
+D+12\right) (\text{k2}\cdot \text{k3}) \text{k3}^2 (D-3)^2-2 \left(2 D^5-35 D^4+216 D^3-573 D^2+566 D-24\right) (\text{k2}\cdot \text{k3})^2+\left(10
+D^5-121 D^4+571 D^3-1260 D^2+1056 D+200\right) \text{k3}^4\right) \text{k2}^2+2 (D-3) (\text{k2}\cdot \text{k3})^2 \left((D-3) D (\text{k2}\cdot
+\text{k3}) (D-2)^2+\left(-2 D^4+29 D^3-129 D^2+186 D-8\right) \text{k3}^2\right)\right)\right) \text{k1}^2+4 D^2 \left(D^2-5 D+6\right)^2 (\text{k1}\cdot
+\text{k2})^4+4 (D-3) D (\text{k1}\cdot \text{k2})^3 \left(2 \left(D^2-3 D-2\right) (\text{k2}\cdot \text{k3}) (D-2)^2+4 \left(D^3-4 D^2+8\right)
+(\text{k1}\cdot \text{k3})-\left(D^4-18 D^3+91 D^2-150 D+16\right) \text{k3}^2\right)+D \left(4 D \left(D^2-5 D+6\right)^2 (\text{k1}\cdot \text{k3})^4-4
+(D-3) \left(\left(D^4-18 D^3+91 D^2-150 D+16\right) \text{k2}^2-2 (D-2)^2 \left(D^2-3 D-2\right) (\text{k2}\cdot \text{k3})\right) (\text{k1}\cdot
+\text{k3})^3+\left(\left(9 D^5-20 D^4-325 D^3+1516 D^2-1916 D+336\right) \text{k2}^4-4 (D-3) \left(D \left(D^3-11 D^2+36 D-36\right) (\text{k2}\cdot
+\text{k3})+\left(D^4-18 D^3+91 D^2-150 D+16\right) \text{k3}^2\right) \text{k2}^2+4 (D-2)^2 \left(3 D^3-18 D^2+23 D+12\right) (\text{k2}\cdot \text{k3})^2\right)
+(\text{k1}\cdot \text{k3})^2+2 D \left(4 \left(D^2-5 D+6\right)^2 (\text{k2}\cdot \text{k3})^3-2 (D-3)^2 \left(D^2-8 D+12\right) \text{k2}^2 \left(\text{k2}\cdot
+\text{k3}+\text{k3}^2\right) (\text{k2}\cdot \text{k3})+\left(9 D^4-78 D^3+229 D^2-276 D+180\right) \text{k2}^4 \text{k3}^2\right) (\text{k1}\cdot
+\text{k3})+D \left(4 \left(D^2-5 D+6\right)^2 (\text{k2}\cdot \text{k3})^4-4 (D-3)^2 \left(D^2-8 D+12\right) \text{k2}^2 \text{k3}^2 (\text{k2}\cdot
+\text{k3})^2+\left(9 D^4-78 D^3+229 D^2-276 D+180\right) \text{k2}^4 \text{k3}^4\right)\right)+2 D (\text{k1}\cdot \text{k2}) \left(8 \left(D^4-7
+D^3+12 D^2+8 D-24\right) (\text{k1}\cdot \text{k3})^3+2 \left(D \left(4 D^4-10 D^3-115 D^2+501 D-518\right) \text{k2}^2+(D-3) \left(2 \left(D^4-12
+D^3+65 D^2-138 D+48\right) (\text{k2}\cdot \text{k3})+\left(-D^4+11 D^3-30 D^2+4 D+40\right) \text{k3}^2\right)\right) (\text{k1}\cdot \text{k3})^2+\left(2
+(D-3) (\text{k2}\cdot \text{k3}) \left(2 D^2 \left(D^2-5 D+6\right) (\text{k2}\cdot \text{k3})-\left(D^4+3 D^3-86 D^2+256 D-112\right) \text{k3}^2\right)+\text{k2}^2
+\left(D \left(17 D^4-142 D^3+389 D^2-408 D+252\right) \text{k3}^2-2 \left(D^5-95 D^3+514 D^2-880 D+336\right) (\text{k2}\cdot \text{k3})\right)\right)
+(\text{k1}\cdot \text{k3})+D \left(4 \left(D^2-5 D+6\right)^2 (\text{k2}\cdot \text{k3})^3-2 (D-3)^2 \left(D^2-8 D+12\right) \text{k3}^2 (\text{k2}\cdot
+\text{k3})^2-2 (D-3)^2 \left(D^2-8 D+12\right) \text{k2}^2 \text{k3}^2 (\text{k2}\cdot \text{k3})+\left(9 D^4-78 D^3+229 D^2-276 D+180\right) \text{k2}^2
+\text{k3}^4\right)\right)+(\text{k1}\cdot \text{k2})^2 \left(8 \left(2 D^6-9 D^5-7 D^4+32 D^3+128 D^2-224 D-16\right) (\text{k1}\cdot \text{k3})^2-4
+D \left(\left(D^5-14 D^4+63 D^3-94 D^2-28 D+120\right) \text{k2}^2-2 \left(D^5-15 D^4+101 D^3-333 D^2+462 D-144\right) (\text{k2}\cdot \text{k3})+D
+\left(-4 D^4+10 D^3+115 D^2-501 D+518\right) \text{k3}^2\right) (\text{k1}\cdot \text{k3})+D \left(-4 D \left(D^2-8 D+12\right) (\text{k2}\cdot \text{k3})
+\text{k3}^2 (D-3)^2+4 (D-2)^2 \left(3 D^3-18 D^2+23 D+12\right) (\text{k2}\cdot \text{k3})^2+\text{k3}^2 \left(\left(9 D^5-20 D^4-325 D^3+1516 D^2-1916
+D+336\right) \text{k3}^2-4 \left(D^5-21 D^4+145 D^3-423 D^2+466 D-48\right) \text{k2}^2\right)\right)\right)\right)\right)/\left(16 (D-2)^2 \left(\text{k1}^2\right)^2.\text{k2}^2.\text{k3}^2.(\text{k1}+\text{k2})^2.(\text{k1}+\text{k3})^2\right)\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{munecoNieve} = \text{Get}[\text{{``}./Descargas/TesisMP/Diagramas/MunecoNieveFinal.txt{''}}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(-\left(\left(K^4 \frac{1}{\text{k1}^2}^2 \left(D \left(2 D^6-33 D^5+134 D^4-87 D^3-268 D^2+108 D+144\right) \text{k1}^6+\left(2 D \left(2
+D^6-33 D^5+134 D^4-87 D^3-268 D^2+108 D+144\right) (\text{k1}\cdot \text{k2})+2 \left(2 D^7-41 D^6+278 D^5-823 D^4+924 D^3+396 D^2-1168 D-384\right)
+\text{k2}^2+D \left(2 D^6-37 D^5+196 D^4-381 D^3+176 D^2+228 D-384\right) \text{k3}^2\right) \text{k1}^4+\left(2 \left(D^7-9 D^6-69 D^5+661 D^4-1292
+D^3-220 D^2+1360 D+384\right) (\text{k1}\cdot \text{k2})^2+2 D \left(2 \left(D^6-18 D^5+93 D^4-168 D^3+64 D^2+56 D-96\right) \text{k2}^2+\left(2
+D^6-37 D^5+198 D^4-381 D^3+166 D^2+180 D-280\right) \text{k3}^2\right) (\text{k1}\cdot \text{k2})+D \left(4 \left(2 D^5-23 D^4+89 D^3-114 D^2-48
+D+144\right) (\text{k1}\cdot \text{k3})^2+8 \left(D^5-13 D^4+59 D^3-103 D^2+28 D+60\right) (\text{k2}\cdot \text{k3}) (\text{k1}\cdot \text{k3})+2
+\left(D^6-19 D^5+111 D^4-261 D^3+228 D^2+44 D-240\right) \text{k2}^4+2 D \left(9 D^4-128 D^3+677 D^2-1586 D+1392\right) (\text{k2}\cdot \text{k3})^2+\left(4
+D^6-87 D^5+638 D^4-2187 D^3+3708 D^2-2436 D-720\right) \text{k2}^2 \text{k3}^2\right)\right) \text{k1}^2+D \left(4 (D-3)^2 \left(D^3-12 D^2+12 D+16\right)
+(\text{k1}\cdot \text{k2})^3+2 (D-2) \left(2 \left(D^2-10 D-8\right) \text{k2}^2 (D-3)^2+\left(D^5-10 D^4-41 D^3+432 D^2-722 D-40\right) \text{k3}^2\right)
+(\text{k1}\cdot \text{k2})^2+2 \left(2 (D+2) \left(D^2-5 D+6\right)^2 (\text{k1}\cdot \text{k3})^2-4 \left(2 D^5-33 D^4+202 D^3-557 D^2+622 D-120\right)
+(\text{k2}\cdot \text{k3}) (\text{k1}\cdot \text{k3})+2 D \left(D^2-5 D+6\right)^2 (\text{k2}\cdot \text{k3})^2+D \left(2 D^5-37 D^4+200 D^3-397
+D^2+204 D+12\right) \text{k2}^2 \text{k3}^2\right) (\text{k1}\cdot \text{k2})+\text{k2}^2 \left(4 D (\text{k2}\cdot \text{k3})^2 \left(D^2-5 D+6\right)^2+4
+D (\text{k1}\cdot \text{k3}) (\text{k2}\cdot \text{k3}) \left(D^2-5 D+6\right)^2+2 \left(7 D^5-92 D^4+475 D^3-1146 D^2+1112 D-96\right) (\text{k1}\cdot
+\text{k3})^2+D \left(2 D^5-37 D^4+200 D^3-397 D^2+204 D+12\right) \text{k2}^2 \text{k3}^2\right)\right)\right)\right)/\left(16 (D-2)^2 (-\text{k1}-\text{k2})^2
+\text{k2}^2 \text{k3}^2\right)\right)\)
+\end{doublespace}
+
+\end{document}
