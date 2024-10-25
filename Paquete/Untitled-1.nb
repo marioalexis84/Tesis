@@ -1,0 +1,263 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9782,        253]
+NotebookOptionsPosition[      7091,        199]
+NotebookOutlinePosition[      7478,        215]
+CellTagsIndexPosition[      7435,        212]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"<<", "Paquete`"}]], "Input",
+ CellChangeTimes->{{3.938530447081649*^9, 3.938530456329659*^9}, {
+   3.938537407347556*^9, 3.938537433148067*^9}, 3.938537814028502*^9},
+ CellLabel->
+  "In[120]:=",ExpressionUUID->"68075057-2510-4e31-8e4e-9c38a01aad88"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["Paquete`den"], "Input",
+ CellChangeTimes->{{3.938545645886141*^9, 3.938545673194401*^9}, {
+  3.938545859934903*^9, 3.9385460066105843`*^9}, {3.938546382403481*^9, 
+  3.938546383691139*^9}},
+ CellLabel->
+  "In[121]:=",ExpressionUUID->"737197ed-a437-468b-9d90-dd0bce3a28e0"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "den", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"den\\\\\\\"\\\", \
+TraditionalForm]\\) appears in multiple contexts \
+\\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Paquete`\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}], \
+TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 121, 15, 
+    30233437531032497923, "Local", "Paquete`den"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.938546384789134*^9},
+ CellLabel->
+  "During evaluation of \
+In[121]:=",ExpressionUUID->"c3ecedc3-ec4b-4e07-958c-5e49541b03c8"],
+
+Cell[BoxData[
+ FormBox["den", TraditionalForm]], "Output",
+ CellChangeTimes->{{3.938545955745666*^9, 3.938546028380739*^9}, 
+   3.938546384820122*^9},
+ CellLabel->
+  "Out[121]=",ExpressionUUID->"e6f4a25d-e39b-4f29-b639-521bc0824fcc"]
+}, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{
+  3.938545863518718*^9},ExpressionUUID->"68b3a0d7-7e32-4f1e-a5fa-\
+ffcb532a0c42"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Paquete`PackageDir", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.938534203628708*^9, 3.9385342112994328`*^9}},
+ CellLabel->"In[93]:=",ExpressionUUID->"0a329925-0dad-4d82-80fa-87e379c2b326"],
+
+Cell[BoxData[
+ FormBox["\<\"/home/alexis/.Mathematica/Applications/Paquete/\"\>", 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.9385342116837463`*^9, 3.938537436142271*^9},
+ CellLabel->"Out[93]=",ExpressionUUID->"0042481e-ed7c-4956-8beb-eaa3a6d17120"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["FCClearScalarProducts"], "Input",
+ CellChangeTimes->{{3.938534406547406*^9, 3.9385344097132177`*^9}, {
+  3.938534457809721*^9, 3.93853457022726*^9}, {3.9385346340285807`*^9, 
+  3.9385346400863028`*^9}},ExpressionUUID->"408fd58b-7b77-4858-a7aa-\
+bf34c94f2d80"],
+
+Cell[BoxData[
+ FormBox["FeynArts", TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.938534410118883*^9, {3.938534461737466*^9, 3.938534483771698*^9}},
+ CellLabel->"Out[87]=",ExpressionUUID->"cfbf57e8-c099-4c7a-981b-3654f0c0d779"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PackageDir", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.9385336669475*^9, 3.938533689128283*^9}},
+ CellLabel->"In[83]:=",ExpressionUUID->"125dbc84-8a28-4c3d-b7fb-2c675f5be13a"],
+
+Cell[BoxData[
+ FormBox["\<\"/home/alexis/.Mathematica/Applications/Paquete/\"\>", 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{{3.938533673447653*^9, 3.9385336895779543`*^9}, 
+   3.9385341995243692`*^9},
+ CellLabel->"Out[83]=",ExpressionUUID->"369b6b26-7bfc-4712-9bbd-b088f44e5e81"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "DirectoryName", "[", "\"\</home/alexis/2024-10-20-Note-17-59.xopp\>\"", 
+   "]"}], "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.938530459135144*^9, 3.938530459665905*^9}, {
+  3.938531051430641*^9, 3.938531082292819*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"abd549b8-ab5a-4ac7-a52b-7f56317fe605"],
+
+Cell[BoxData[
+ FormBox["\<\"/home/alexis/\"\>", TraditionalForm]], "Output",
+ CellChangeTimes->{{3.938531062753932*^9, 3.93853108347115*^9}},
+ CellLabel->"Out[41]=",ExpressionUUID->"dc5e8a51-0863-40f6-8bc2-a15fca28657e"]
+}, Open  ]],
+
+Cell[BoxData["Import"], "Input",
+ CellChangeTimes->{{3.93853617415158*^9, 
+  3.9385361782320137`*^9}},ExpressionUUID->"dd25c916-7dc8-461c-bb55-\
+d3301f00c701"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["$FeynCalcDirectory"], "Input",
+ CellChangeTimes->{{3.9385313868725967`*^9, 3.938531459192761*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"2f255637-6b1d-4599-b321-5641d0f6920e"],
+
+Cell[BoxData[
+ FormBox["\<\"/home/alexis/Descargas/Mathematica/AddOns/Applications/FeynCalc/\
+\"\>", TraditionalForm]], "Output",
+ CellChangeTimes->{{3.938531428460718*^9, 3.938531459695531*^9}},
+ CellLabel->"Out[47]=",ExpressionUUID->"001639af-ea72-4f00-a59c-97876454fb13"]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\"", "$PaqueteDirectory"}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.938531416703906*^9, 
+  3.9385314167805367`*^9}},ExpressionUUID->"71b852c0-84ed-496a-bb15-\
+0a8cf78b1bda"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DirectoryName", "[", "\"\<anteojo.png\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.938531778967702*^9, 3.938531829399918*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"074e6efb-4b26-45db-9eed-9180bafbb23c"],
+
+Cell[BoxData[
+ FormBox["\<\"\"\>", TraditionalForm]], "Output",
+ CellChangeTimes->{{3.938531782713646*^9, 3.9385318297541847`*^9}},
+ CellLabel->"Out[53]=",ExpressionUUID->"cb893ae7-1fa1-4dc7-b07e-13834b24b75b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Directory", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.938532025918613*^9, 3.938532063469039*^9}, {
+  3.938532097723528*^9, 3.9385321712793417`*^9}},
+ CellLabel->"In[64]:=",ExpressionUUID->"1293f650-4487-46d8-b53e-68553f89a42d"],
+
+Cell[BoxData[
+ FormBox["\<\"/home/alexis\"\>", TraditionalForm]], "Output",
+ CellChangeTimes->{{3.9385320302549257`*^9, 3.938532064021443*^9}, {
+   3.938532105720029*^9, 3.938532111426961*^9}, {3.938532141903857*^9, 
+   3.9385321716638803`*^9}, 3.938533037820262*^9},
+ CellLabel->"Out[64]=",ExpressionUUID->"dfa290ce-00cc-41a6-ac18-3627d958ca71"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Print", "[", "$InputFileName", "]"}]], "Input",
+ CellChangeTimes->{
+  3.938532981693643*^9, {3.93853301339357*^9, 3.93853303330612*^9}, {
+   3.9385334002109013`*^9, 3.938533425674593*^9}},
+ CellLabel->"In[74]:=",ExpressionUUID->"098184d5-f744-41d5-98b1-f0452d024d65"],
+
+Cell[BoxData[
+ FormBox["\<\"\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{{3.938533426164069*^9, 3.938533429428084*^9}},
+ CellLabel->
+  "During evaluation of \
+In[74]:=",ExpressionUUID->"e8943184-b16a-4ad7-b55e-88ecb5353279"]
+}, Open  ]]
+},
+WindowSize->{679, 712},
+WindowMargins->{{1, Automatic}, {1, Automatic}},
+FrontEndVersion->"12.3 for Linux x86 (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e1d50f7e-e1ca-4815-976c-a5247c020eb7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 273, 5, 30, "Input",ExpressionUUID->"68075057-2510-4e31-8e4e-9c38a01aad88"],
+Cell[CellGroupData[{
+Cell[856, 29, 286, 5, 30, "Input",ExpressionUUID->"737197ed-a437-468b-9d90-dd0bce3a28e0"],
+Cell[1145, 36, 756, 16, 49, "Message",ExpressionUUID->"c3ecedc3-ec4b-4e07-958c-5e49541b03c8"],
+Cell[1904, 54, 233, 5, 33, "Output",ExpressionUUID->"e6f4a25d-e39b-4f29-b639-521bc0824fcc"]
+}, Open  ]],
+Cell[2152, 62, 147, 3, 53, "Input",ExpressionUUID->"68b3a0d7-7e32-4f1e-a5fa-ffcb532a0c42"],
+Cell[CellGroupData[{
+Cell[2324, 69, 213, 3, 30, "Input",ExpressionUUID->"0a329925-0dad-4d82-80fa-87e379c2b326"],
+Cell[2540, 74, 258, 4, 33, "Output",ExpressionUUID->"0042481e-ed7c-4956-8beb-eaa3a6d17120"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2835, 83, 273, 4, 30, "Input",ExpressionUUID->"408fd58b-7b77-4858-a7aa-bf34c94f2d80"],
+Cell[3111, 89, 233, 4, 33, "Output",ExpressionUUID->"cfbf57e8-c099-4c7a-981b-3654f0c0d779"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3381, 98, 201, 3, 30, "Input",ExpressionUUID->"125dbc84-8a28-4c3d-b7fb-2c675f5be13a"],
+Cell[3585, 103, 288, 5, 33, "Output",ExpressionUUID->"369b6b26-7bfc-4712-9bbd-b088f44e5e81"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3910, 113, 372, 7, 75, "Input",ExpressionUUID->"abd549b8-ab5a-4ac7-a52b-7f56317fe605"],
+Cell[4285, 122, 220, 3, 33, "Output",ExpressionUUID->"dc5e8a51-0863-40f6-8bc2-a15fca28657e"]
+}, Open  ]],
+Cell[4520, 128, 159, 3, 30, "Input",ExpressionUUID->"dd25c916-7dc8-461c-bb55-d3301f00c701"],
+Cell[CellGroupData[{
+Cell[4704, 135, 191, 2, 30, "Input",ExpressionUUID->"2f255637-6b1d-4599-b321-5641d0f6920e"],
+Cell[4898, 139, 274, 4, 33, "Output",ExpressionUUID->"001639af-ea72-4f00-a59c-97876454fb13"]
+}, Open  ]],
+Cell[5187, 146, 218, 5, 29, InheritFromParent,ExpressionUUID->"71b852c0-84ed-496a-bb15-0a8cf78b1bda"],
+Cell[CellGroupData[{
+Cell[5430, 155, 229, 3, 30, "Input",ExpressionUUID->"074e6efb-4b26-45db-9eed-9180bafbb23c"],
+Cell[5662, 160, 210, 3, 33, "Output",ExpressionUUID->"cb893ae7-1fa1-4dc7-b07e-13834b24b75b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5909, 168, 253, 4, 30, "Input",ExpressionUUID->"1293f650-4487-46d8-b53e-68553f89a42d"],
+Cell[6165, 174, 346, 5, 33, "Output",ExpressionUUID->"dfa290ce-00cc-41a6-ac18-3627d958ca71"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6548, 184, 291, 5, 30, "Input",ExpressionUUID->"098184d5-f744-41d5-98b1-f0452d024d65"],
+Cell[6842, 191, 233, 5, 22, "Print",ExpressionUUID->"e8943184-b16a-4ad7-b55e-88ecb5353279"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
