@@ -13,8 +13,11 @@ denCilindro = FeynAmpDenominator[
     PropagatorDenominator[Momentum[k1, D] + Momentum[k2, D], 0],
     PropagatorDenominator[Momentum[k1, D] + Momentum[k3, D], 0]];
 
-
-(*falta tortuga*)
+denTortuga = FeynAmpDenominator[
+    PropagatorDenominator[Momentum[k1, D], 0],
+    PropagatorDenominator[Momentum[k2, D], 0],
+    PropagatorDenominator[Momentum[k3, D], 0],
+    PropagatorDenominator[Momentum[k1, D] + Momentum[k2, D], 0]];
 
 denEarth = FeynAmpDenominator[PropagatorDenominator[Momentum[k1, D], 0]]\
     * FeynAmpDenominator[PropagatorDenominator[Momentum[k2, D], 0]]\

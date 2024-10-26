@@ -18,10 +18,10 @@ filtroGra[lis_, deg_] :=
     lis[[#]] & /@ Flatten[Position[funcGra[lis], _?(# > deg &) ]];
 
 
-Filtros[file_, den_, dim_, degree_] := Module[
+Filtros[exp_, den_, dim_, degree_] := Module[
     {sinDen, sinDenDim, numExpand, lista},
 
-    sinDen = Get[file];
+    sinDen = exp;
 
     (* sacamos el factor (D-2) de denominador para evitar que lo expanda *)
     sinDen = sinDen*(D-2)^2;
@@ -89,7 +89,7 @@ Print[grados];
 *)
 ]
 
-reemplazoMomentos[feynDenominator_] := 1/Times @@ (List @@ FeynAmpDenominatorCombine[feynDenominator]) /.
+reemplazoMomentos[feynDenominator_] := 1/Times @@ (List @@ FeynAmpDenominatorSimplify[FeynAmpDenominatorCombine[feynDenominator]]) /.
     {PropagatorDenominator[Momentum[k1, D], 0] -> k1^2,
      PropagatorDenominator[Momentum[k2, D], 0] -> k2^2,
      PropagatorDenominator[Momentum[k3, D], 0] -> k3^2,
