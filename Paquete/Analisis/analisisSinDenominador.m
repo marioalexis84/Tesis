@@ -20,7 +20,7 @@ filtroGra[lis_, deg_] :=
 filtroGraEqual[lis_, deg_] := 
     lis[[#]] & /@ Flatten[Position[funcGra[lis], _?(# == deg &)]];
 
-Filtros[exp_, denom_, dim_, degree_] := Filtros[exp, denom, D, 8];
+Filtros[exp_, denom_] := Filtros[exp, denom, D, 8];
 
 Filtros[exp_, denom_, dim_, degree_] := Module[
     {sinDen, sinDenDim, den, numExpand, lista},
@@ -57,6 +57,7 @@ Print["Grados: ", grados];
     (* esto quiza simplifica algo *)
     paso1 = Together[Total[paso0]];
     paso2 = List @@ Distribute[paso1];
+    FCClearScalarProducts[];
     paso2
 (*
     paso3 =   ExpandAll[
