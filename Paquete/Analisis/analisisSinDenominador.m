@@ -17,14 +17,13 @@ funcGra[lis_] := AlgebraicDegree[Denominator[#]] & /@ lis;
 filtroGra[lis_, deg_] := 
     lis[[#]] & /@ Flatten[Position[funcGra[lis], _?(# > deg &) ]];
 
+filtroGraEqual[lis_, deg_] := 
+    lis[[#]] & /@ Flatten[Position[funcGra[lis], _?(# == deg &)]];
 
-Filtros[exp_, den_, dim_, degree_] := Module[
-    {sinDen, sinDenDim, numExpand, lista},
+Filtros[exp_, denom_, dim_, degree_] := Filtros[exp, denom, D, 8];
 
-    sinDen = exp;
-
-    (* sacamos el factor (D-2) de denominador para evitar que lo expanda *)
-    sinDen = sinDen*(D-2)^2;
+Filtros[exp_, denom_, dim_, degree_] := Module[
+    {sinDen, sinDenDim, den, numExpand, lista},
 
     (* limpiamos posibles FeynCalc scalarProducts activados *)
     FCClearScalarProducts[];
@@ -32,6 +31,12 @@ Filtros[exp_, den_, dim_, degree_] := Module[
         {SPD[k1], SPD[k2], SPD[k3], SPD[k1, k2], SPD[k1, k3], SPD[k2, k3]},
         {k1^2, k2^2, k3^2, k12, k13, k23}
     ];
+
+    den = reemplazoMomentos[denom];
+Print["Denominador: ", den];
+    (* sacamos el factor (D-2) de denominador para evitar que lo expanda *)
+    sinDen = exp*(D-2)^2;
+
 
     (* aplicamos valor especifico para la dimension D*)
     sinDenDim = sinDen /. D -> dim;
@@ -43,12 +48,12 @@ Print[numExpand];
 (*
 Print["lista", lista];
 *)
+    grados = funcGra[lista];
 
-    grados = AlgebraicDegree[Denominator[#]]& /@ lista;
+Print["Grados: ", grados];
 
-Print[grados];
+    paso0 = filtroGra[lista, degree];
 
-    paso0 = lista[[#]]& /@ Flatten[Position[grados, _?(# > 4 &)]];
     (* esto quiza simplifica algo *)
     paso1 = Together[Total[paso0]];
     paso2 = List @@ Distribute[paso1];
@@ -66,7 +71,6 @@ Print[grados];
 *)
 
     paso4 = List @@ Total[paso3];
-
 
     paso5 = filtroGra[paso4, degree];
 

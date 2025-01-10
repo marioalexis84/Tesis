@@ -36,14 +36,10 @@ Filtros[exp_, den_, dim_, degree_] := Module[
     (* aplicamos valor especifico para la dimension D*)
     sinDenDim = sinDen /. D -> dim;
     numExpand = ExpandAll[sinDenDim];
-(*
-Print[numExpand];
-*)
+Print["numExpand", numExpand];
     lista = List @@ Distribute[numExpand*den];
-(*
 Print["lista", lista];
-*)
-
+(*
     grados = AlgebraicDegree[Denominator[#]]& /@ lista;
 
 Print[grados];
@@ -53,6 +49,7 @@ Print[grados];
     paso1 = Together[Total[paso0]];
     paso2 = List @@ Distribute[paso1];
     paso2
+*)
 (*
     paso3 =   ExpandAll[
             paso2 /. {k23 -> 1/2*(K23^2 - k2^2 - k3^2)}
