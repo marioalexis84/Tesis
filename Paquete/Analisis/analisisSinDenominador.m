@@ -8,6 +8,9 @@ AlgebraicDegree[eqn_, vars_List] :=
         ]
     ];
 
+ListAlgebraicDegree[eqn_, vars_List] := 
+  Flatten[GroebnerBasis`DistributedTermsList[eqn /. Equal :> Subtract,
+      vars][[1, All, 1]]];
 
 AlgebraicDegree[eqn_] := AlgebraicDegree[eqn, Variables[eqn]];
 
@@ -19,6 +22,8 @@ filtroGra[lis_, deg_] :=
 
 filtroGraEqual[lis_, deg_] := 
     lis[[#]] & /@ Flatten[Position[funcGra[lis], _?(# == deg &)]];
+
+filtrarExpand[paso_, deg_] := filtroGra[List @@ Total[ExpandAll[paso]], deg];
 
 Filtros[exp_, denom_] := Filtros[exp, denom, D, 8];
 
@@ -101,7 +106,8 @@ reemplazoMomentos[feynDenominator_] := 1/Times @@ (List @@ FeynAmpDenominatorSim
      PropagatorDenominator[Momentum[k1, D] + Momentum[k2, D], 0] -> K12^2,
      PropagatorDenominator[Momentum[k1, D] + Momentum[k3, D], 0] -> K13^2,
      PropagatorDenominator[Momentum[k2, D] + Momentum[k3, D], 0] -> K23^2,
-     PropagatorDenominator[Momentum[k1, D] + Momentum[k2, D] + Momentum[k3, D], 0] -> K123^2
+     PropagatorDenominator[Momentum[k1, D] + Momentum[k2, D] + Momentum[k3, D], 0] -> K123^2,
+     PropagatorDenominator[Momentum[k2, D] - Momentum[k3, D], 0] -> Q23^2
     };     
 
 (*
