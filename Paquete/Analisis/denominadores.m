@@ -13,12 +13,6 @@ denCilindro = FeynAmpDenominator[
     PropagatorDenominator[Momentum[k1, D] + Momentum[k2, D], 0],
     PropagatorDenominator[Momentum[k1, D] + Momentum[k3, D], 0]];
 
-denTortuga = FeynAmpDenominator[
-    PropagatorDenominator[Momentum[k1, D], 0],
-    PropagatorDenominator[Momentum[k2, D], 0],
-    PropagatorDenominator[Momentum[k3, D], 0],
-    PropagatorDenominator[Momentum[k1, D] + Momentum[k2, D], 0]];
-
 denEarth = FeynAmpDenominator[PropagatorDenominator[Momentum[k1, D], 0]]\
     * FeynAmpDenominator[PropagatorDenominator[Momentum[k2, D], 0]]\
     * FeynAmpDenominator[PropagatorDenominator[Momentum[k3, D], 0]]\
@@ -44,3 +38,52 @@ denT10ghost2 = FeynAmpDenominator[
     PropagatorDenominator[Momentum[k3, D], 0],
     PropagatorDenominator[Momentum[k1, D], 0],
     PropagatorDenominator[Momentum[k2, D], 0]];
+
+denCil1LoopGhost = FeynAmpDenominator[
+    PropagatorDenominator[Momentum[k2, D], 0],
+    PropagatorDenominator[Momentum[k2, D], 0],
+    PropagatorDenominator[Momentum[k3, D], 0],
+    PropagatorDenominator[Momentum[k1, D], 0],
+    PropagatorDenominator[-Momentum[k2, D] + Momentum[k3, D], 0],
+    PropagatorDenominator[Momentum[k1, D] - Momentum[k2, D], 0]];
+
+denCil2LoopGhost = FeynAmpDenominator[
+    PropagatorDenominator[Momentum[k2, D], 0],
+    PropagatorDenominator[Momentum[k2, D], 0],
+    PropagatorDenominator[Momentum[k1, D], 0],
+    PropagatorDenominator[Momentum[k3, D], 0],
+    PropagatorDenominator[Momentum[k1, D] - Momentum[k2, D], 0],
+    PropagatorDenominator[-Momentum[k2, D] + Momentum[k3, D], 0]];
+
+denCilCirc = FeynAmpDenominator[
+    PropagatorDenominator[Momentum[k2, D], 0],
+    PropagatorDenominator[Momentum[k2, D], 0],
+    PropagatorDenominator[Momentum[k1, D], 0],
+    PropagatorDenominator[Momentum[k3, D], 0],
+    PropagatorDenominator[Momentum[k1, D] - Momentum[k2, D], 0],
+    PropagatorDenominator[-Momentum[k2, D] + Momentum[k3, D], 0]];
+
+denT10ghost1 = FeynAmpDenominator[
+    PropagatorDenominator[Momentum[k3, D], 0],
+    PropagatorDenominator[Momentum[k1, D], 0],
+    PropagatorDenominator[Momentum[k2, D], 0],
+    PropagatorDenominator[-Momentum[k1, D] + Momentum[k3, D], 0],
+    PropagatorDenominator[Momentum[k1, D] - Momentum[k2, D], 0],
+    PropagatorDenominator[-Momentum[k2, D] + Momentum[k3, D], 0]];
+
+denTortuga = FeynAmpDenominator[
+    PropagatorDenominator[Momentum[k1, D], 0],
+    PropagatorDenominator[Momentum[k2, D], 0],
+    PropagatorDenominator[Momentum[k3, D], 0],
+    PropagatorDenominator[Momentum[k1, D] + Momentum[k2, D], 0]];
+
+denMunecoNieveGhost = FeynAmpDenominator[
+    PropagatorDenominator[Momentum[k2, D], 0]]\
+    * FeynAmpDenominator[PropagatorDenominator[Momentum[k3, D], 0]]\
+    * FeynAmpDenominator[PropagatorDenominator[Momentum[k1, D] + Momentum[k3, D], 0]]\
+    * FeynAmpDenominator[PropagatorDenominator[Momentum[k1, D], 0], PropagatorDenominator[Momentum[k1, D], 0]];
+
+denOso = FeynAmpDenominator[
+    PropagatorDenominator[Momentum[k1, D], 0]]^2\
+    * FeynAmpDenominator[PropagatorDenominator[Momentum[k2, D], 0]]\
+    * FeynAmpDenominator[PropagatorDenominator[Momentum[k3, D], 0]];
