@@ -8,7 +8,7 @@ AlgebraicDegree[eqn_, vars_List] :=
         ]
     ];
 
-ListAlgebraicDegree[eqn_, vars_List] := 
+ListAlgebraicDegree[eqn_, vars_List] :=
   Flatten[GroebnerBasis`DistributedTermsList[eqn /. Equal :> Subtract,
       vars][[1, All, 1]]];
 
@@ -24,6 +24,18 @@ filtroGraEqual[lis_, deg_] :=
     lis[[#]] & /@ Flatten[Position[funcGra[lis], _?(# == deg &)]];
 
 filtrarExpand[paso_, deg_] := filtroGra[List @@ Total[ExpandAll[paso]], deg];
+
+filtrarAntisimetrica[value_, rules_] := Module[
+    {temp},
+    temp = 1/2*(value + (value /. rules));
+    If[temp === 0, 0, value]
+];
+
+filtrarSimetrica[value_, rules_] := Module[
+    {temp},
+    temp = 1/2*(value - (value /. rules));
+    If[temp === 0, 0, value ]
+];
 
 Filtros[exp_, denom_] := Filtros[exp, denom, D, 8];
 
