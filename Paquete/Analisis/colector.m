@@ -1,3 +1,25 @@
+
+(*Esta funcion aplica a la lista de elementos de tipo k, en el que el \
+elemento distintivo, de grado 4, tiene un factor 2.}
+ej X={2*k1 -2*k2,k1,k3} quiere decir (k1-k2)^2*k1^2*k3^2. Y la \
+funcion devuelve las sustituciones correspondientes*)
+
+SustK[x_] := Module[{cuarta, cuartapos, listacortada, Cambios},
+   cuarta[X_] := 
+    Flatten[Select[Coefficient[#, {k1, k2, k3}] & /@ X, 
+      ContainsAny[{2, -2}]]];
+   cuartapos[X_] := 
+    Position[Coefficient[#, {k1, k2, k3}] & /@ X, cuarta[X]];
+   listacortada[X_] := Drop[X, Flatten[cuartapos[X]]];
+   Cambios[X_] := 
+    Flatten[Solve[
+       Join[listacortada[
+          x], {1/2*X[[Flatten[cuartapos[x]][[1]]]]}] == {K1, K2, 
+         K3}, {k1, k2, k3}]] /. {K1 -> k1, K2 -> k2, K3 -> k3};
+   (*Cambios[X_]=Flatten[Solve[Join[listacortada[X],{X[[Flatten[
+   cuartapos[X]][[1]]]]}]=={K2,K3,K1},{k1,k2,k3}]]*);
+   Cambios[x]];
+
 (*Aqui x es la lista de k que aparece en el denominador. Salida 1 \
 corresponde a I. Salida 0 corresponde a J*)
 (*Necesitaremos dos \
@@ -69,9 +91,17 @@ vuelvo a cambiar el nombre*)
 
 (*Aqui x es la tabla de terminos e y la de los denominadores. \
 Jterms  e Iterms muestra los terminos pero habiando reescrito los K \
-mayusculas si los hubiera*)
+mayusculas si los hubiera. Para los Kterms, como no una tabla exclusiva, no necesito una segunda variable*)
 
-
+Kterms[x_] := (ExpandAll[
+     Numerator[x] /. {K12 -> Sqrt[k1^2 + k2^2 + 2*k12], 
+       K13 -> Sqrt[k1^2 + k3^2 + 2*k13], 
+       K23 -> Sqrt[k2^2 + k3^2 + 2*k23], 
+       Q23 -> Sqrt[ k2^2 + k3^2 - 2*k23], 
+       K123 -> Sqrt[
+         k1^2 + k2^2 + k3^2 + 2*k12 + 2*k13 + 
+          2*k23]}])*1/(Denominator[x] /. {K12 -> k1 + k2, 
+       K13 -> k1 + k3, Q23 -> k2 - k3, K123 -> k1 + k2 + k3});
 Jterms[x_, y_] := (ExpandAll[
      Numerator[
        SelectorIoJ[x, y, 0]] /. {K12 -> Sqrt[k1^2 + k2^2 + 2*k12], 
@@ -126,10 +156,11 @@ modulo cosas que son cero*)
 
 SustI2[x_] := SustSP[SustI[x]];
 SustJ2[x_] := SustSP[SustJ[x]];
+SustK2[x_] := SustSP[SustK[x]];
 
 
 
-(*Llegamos a las funciones casi finales. Ican y Jcan, por "canonicos"*)
+(*Llegamos a las funciones casi finales. Ican y Jcan y Kcan, por "canonicos"*)
 
 Ican[x_, y_] := 
   Table[(Numerator[Iterms[x, y]][[
@@ -145,7 +176,10 @@ Jcan[x_, y_] :=
        i]] /. (SustJ[#] & /@ SelectorIoJ[y, y, 0])[[i]]), {i, 1, 
    Length[Jterms[x, y]]}];
 
-
+Kcan[x_, y_] := 
+  Table[(Numerator[Kterms[x]][[i]] /. (SustK2[#] & /@ y)[[
+       i]])*1/(Denominator[Kterms[x]][[i]] /. (SustK[#] & /@ y)[[
+        i]]), {i, 1, Length[Kterms[x]]}];
 
 (*Funcion Principal. Falta juntar todo y sustituir cosas segun \
 identidades de regularizacion dimensional. recordemos que hay dos \
@@ -162,3 +196,7 @@ Icanonico[x_, y_] :=
 Jcanonico[x_, y_] := 
   Factor[Together[Total[Jcan[x, y]]] /. {k12 -> 0, k13^2 -> J1, 
      k23^2 -> J1, k13*k23 -> J2}];
+Kcanonico[x_, y_] := 
+  Factor[Together[Total[Kcan[x, y]]] /. {k12^2 -> K1, k13^2 -> K1, 
+     k23^2 -> K2, k13*k12 -> 0}];
+     
