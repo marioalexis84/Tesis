@@ -1,7 +1,7 @@
 
 (*Esta funcion aplica a la lista de elementos de tipo k, en el que el \
 elemento distintivo, de grado 4, tiene un factor 2.}
-ej X={2*k1 -2*k2,k1,k3} quiere decir (k1-k2)^2*k1^2*k3^2. Y la \
+ej X={2*k1 -2*k2,k1,k3} quiere decir (k1-k2)^4*k1^2*k3^2. Y la \
 funcion devuelve las sustituciones correspondientes*)
 
 SustK[x_] := Module[{cuarta, cuartapos, listacortada, Cambios},
