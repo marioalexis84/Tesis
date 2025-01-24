@@ -50,7 +50,7 @@ Filtros[exp_, denom_, dim_, degree_] := Module[
     ];
 
     den = reemplazoMomentos[denom];
-Print["Denominador: ", den];
+(*Print["Denominador: ", den];*)
     (* sacamos el factor (D-2) de denominador para evitar que lo expanda *)
     sinDen = exp*(D-2)^2;
 
@@ -62,12 +62,12 @@ Print["Denominador: ", den];
 Print[numExpand];
 *)
     lista = List @@ Distribute[numExpand*den];
-(*
-Print["lista", lista];
-*)
     grados = funcGra[lista];
 
+(*
+(*Print["lista", lista];*)
 Print["Grados: ", grados];
+*)
 
     paso0 = filtroGra[lista, degree];
 

@@ -29,12 +29,15 @@ terminosDiagrama[sinDen_, den_, reemp_List, reempNum_List] := Module[
 tablaDen[term_] := Module[
     {pot, tab}, 
     pot = ListAlgebraicDegree[
-        #, {k1, k2, k3, K12, K13, K123, Q23}] & /@ Denominator[term];
+        #, {k1, k2, k3, K12, K13, K23, K123, Q23}] & /@ Denominator[term];
 
     tab = DeleteCases[#, 0] & /@ 
-      Table[{k1, k2, k3, K12, K13, K123, Q23} * pot[[n]]/2,
-            {n, 1, Length[pot]}] /. {K12 -> k1 + k2, K13 -> k1 + k3, 
+      Table[{k1, k2, k3, K12, K13, K23, K123, Q23} * pot[[n]]/2,
+            {n, 1, Length[pot]}] /. {K12 -> k1 + k2, K13 -> k1 + k3, K23 -> k2 + k3,
         Q23 -> k2 - k3, K123 -> k1 + k2 + k3};
 
     tab
 ];
+
+mascaraTablaLen4[tab_] := Flatten[Position[tab, s_ /; Length[s] == 4]];
+

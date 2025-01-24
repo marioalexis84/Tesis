@@ -101,7 +101,7 @@ Kterms[x_] := (ExpandAll[
        K123 -> Sqrt[
          k1^2 + k2^2 + k3^2 + 2*k12 + 2*k13 + 
           2*k23]}])*1/(Denominator[x] /. {K12 -> k1 + k2, 
-       K13 -> k1 + k3, Q23 -> k2 - k3, K123 -> k1 + k2 + k3});
+       K13 -> k1 + k3, K23 -> k2 + k3, Q23 -> k2 - k3, K123 -> k1 + k2 + k3});
 Jterms[x_, y_] := (ExpandAll[
      Numerator[
        SelectorIoJ[x, y, 0]] /. {K12 -> Sqrt[k1^2 + k2^2 + 2*k12], 
@@ -111,7 +111,7 @@ Jterms[x_, y_] := (ExpandAll[
        K123 -> Sqrt[
          k1^2 + k2^2 + k3^2 + 2*k12 + 2*k13 + 
           2*k23]}])*1/(Denominator[
-       SelectorIoJ[x, y, 0]] /. {K12 -> k1 + k2, K13 -> k1 + k3, 
+       SelectorIoJ[x, y, 0]] /. {K12 -> k1 + k2, K13 -> k1 + k3, K23 -> k2 + k3,
        Q23 -> k2 - k3, K123 -> k1 + k2 + k3});
 
 
@@ -124,7 +124,7 @@ Iterms[x_, y_] := (ExpandAll[
        K123 -> Sqrt[
          k1^2 + k2^2 + k3^2 + 2*k12 + 2*k13 + 
           2*k23]}])*1/(Denominator[
-       SelectorIoJ[x, y, 1]] /. {K12 -> k1 + k2, K13 -> k1 + k3, 
+       SelectorIoJ[x, y, 1]] /. {K12 -> k1 + k2, K13 -> k1 + k3, K23 -> k2 + k3,
        Q23 -> k2 - k3, K123 -> k1 + k2 + k3});
 
 
@@ -187,16 +187,16 @@ tipos de J*)
 
 
 Icanonico[x_, y_] := 
- Factor[Together[Total[Ican[x, y]]] /. {k12^2 -> -2, k23^2 -> -2, 
+ Factor[Together[Total[Ican[x, y]]] /. {k1^2 -> 0, k2^2 -> 0, k3^2 -> 0, k1^4 -> 0, k2^4 -> 0, k3^4 -> 0, k12^2 -> -2, k23^2 -> -2, 
     k13^2 -> -2, k12 -> 1, k13 -> 1, k23 -> 1}];
 
 (*recordar lo que pasaba en las J. si habia un solo k12 daba cero. Los distintos de cero son aquellos: 
       J1) que tuvieran k13^2 o k23^3, ambos iguales o J2) k13*k12.*)
 
 Jcanonico[x_, y_] := 
-  Factor[Together[Total[Jcan[x, y]]] /. {k12 -> 0, k13^2 -> J1, 
+  Factor[Together[Total[Jcan[x, y]]] /. {k1^2 -> 0, k2^2 -> 0, k3^2 -> 0, k1^4 -> 0, k2^4 -> 0, k3^4 -> 0, k12 -> 0, k13^2 -> J1, 
      k23^2 -> J1, k13*k23 -> J2}];
 Kcanonico[x_, y_] := 
-  Factor[Together[Total[Kcan[x, y]]] /. {k12^2 -> K1, k13^2 -> K1, 
-     k23^2 -> K2, k13*k12 -> 0}];
+  Factor[Together[Total[Kcan[x, y]]] /. {k1^2 -> 0, k2^2 -> 0, k3^2 -> 0, k1^4 -> 0, k2^4 -> 0, k3^4 -> 0, k12^2 -> K1, k13^2 -> K2, 
+     k23^2 -> K2, k12 -> 0, k13 -> 0}];
      
