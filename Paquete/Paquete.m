@@ -16,6 +16,8 @@ Print[PackageDir[]]
 Get[PackageDir[] <> "Analisis/analisisSinDenominador.m"]
 Get[PackageDir[] <> "Analisis/denominadores.m"]
 Get[PackageDir[] <> "Analisis/colector.m"]
+Get[PackageDir[] <> "Analisis/filtro.m"]
+Get[PackageDir[] <> "Analisis/tablas.m"]
 
 denD = 1/(D-2)^2;
 sinDenAnteojo = Get[PackageDir[] <> "../Diagramas/SinDenominador/AnteojoFinal_sinDenominador.txt"];
