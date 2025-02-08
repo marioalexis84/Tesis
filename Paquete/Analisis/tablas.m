@@ -16,6 +16,8 @@ tablaT10ghost1[] := Module[
 ];
 *)
 
+(* Mercedes Benz*)
+
 terminosT10[] := terminosDiagrama[
     sinDenT10 /. {k1 -> -k1},
     denT10 /. {k1 -> -k1},
@@ -27,6 +29,7 @@ terminosT10[] := terminosDiagrama[
 tablaT10[] := tablaDen[terminosT10[]];
 
 
+(* Mercedes Benz ghost1*)
 
 terminosT10ghost1[] := terminosDiagrama[
     sinDenT10ghost1 /. {k1 -> -k1},
@@ -38,6 +41,8 @@ terminosT10ghost1[] := terminosDiagrama[
 
 tablaT10ghost1[] := tablaDen[terminosT10ghost1[]];
 
+(* Mercedes Benz ghost2*)
+
 terminosT10ghost2[] := terminosDiagrama[
     sinDenT10ghost2 /. {k1 -> -k1},
     denT10ghost2 /. {k1 -> -k1},
@@ -48,6 +53,8 @@ terminosT10ghost2[] := terminosDiagrama[
 
 tablaT10ghost2[] := tablaDen[terminosT10ghost2[]];
 
+(*Earth*)
+
 terminosEarth[] := terminosDiagrama[
     sinDenEarth,
     denEarth,
@@ -56,6 +63,8 @@ terminosEarth[] := terminosDiagrama[
 
 tablaEarth[] := tablaDen[terminosEarth[]];
 
+(*Tortuga*)
+
 terminosTortuga[] := terminosDiagrama[
     sinDenTortuga,
     denTortuga,
@@ -63,6 +72,18 @@ terminosTortuga[] := terminosDiagrama[
     {}];
 
 tablaTortuga[] := tablaDen[terminosTortuga[]];
+
+(*Oso*)
+
+terminosOso[] := terminosDiagrama[sinDenOso, denOso,{},{}];
+tablaOso[] := tablaDen[terminosOso[]];
+
+(*cilindro*)
+(*falta*)
+(*cilindro circulante*)
+(*falta*)
+
+(*Cilindro 1loop ghost*)
 
 terminosCil1LoopGhost[] := terminosDiagrama[
     sinDenCil1LoopGhost /. {k2 -> -k2},
@@ -73,6 +94,8 @@ terminosCil1LoopGhost[] := terminosDiagrama[
     {}];
 tablaCil1LoopGhost[] := tablaDen[terminosCil1LoopGhost[]];
 
+(*Cilindro 2loop ghost*)
+
 terminosCil2LoopGhost[] := terminosDiagrama[
     sinDenCil2LoopGhost /. {k2 -> -k2},
     denCil2LoopGhost /. {k2 -> -k2},
@@ -82,8 +105,7 @@ terminosCil2LoopGhost[] := terminosDiagrama[
     {}];
 tablaCil2LoopGhost[] := tablaDen[terminosCil2LoopGhost[]];
 
-terminosOso[] := terminosDiagrama[sinDenOso, denOso,{},{}];
-tablaOso[] := tablaDen[terminosOso[]];
+(*Anteojo*)
 
 terminosAnteojo[] := terminosDiagrama[
     sinDenAnteojo,
@@ -94,4 +116,10 @@ terminosAnteojo[] := terminosDiagrama[
      K23 -> Sqrt[k2^2 + k3^2 + 2*k23]}];
 
 tablaAnteojo[] := tablaDen[terminosAnteojo[]];
+
+(*Muneco nieve*)
+(*Muneco nieve ghost*)
+
+
+
 
