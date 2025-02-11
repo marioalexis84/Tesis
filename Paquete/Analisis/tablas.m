@@ -81,6 +81,15 @@ tablaOso[] := tablaDen[terminosOso[]];
 (*cilindro*)
 (*falta*)
 (*cilindro circulante*)
+terminosCilCirculante[] := terminosDiagrama[
+    sinDenCilCirc /. {k2 -> -k2},
+    denCilCirc /. {k2 -> -k2},
+    {{k12 -> 1/2*(K12^2 - k1^2 - k2^2)},
+     {k23 -> 1/2*(K23^2 - k2^2 - k3^2)}},
+    {K12 -> Sqrt[k1^2 + k2^2 + 2*k12],
+     K23 -> Sqrt[k2^2 + k3^2 + 2*k23]}];
+
+tablaCilCirculante[] := tablaDen[terminosCilCirculante[]];
 (*falta*)
 
 (*Cilindro 1loop ghost*)
