@@ -90,7 +90,6 @@ terminosCilCirculante[] := terminosDiagrama[
      K23 -> Sqrt[k2^2 + k3^2 + 2*k23]}];
 
 tablaCilCirculante[] := tablaDen[terminosCilCirculante[]];
-(*falta*)
 
 (*Cilindro 1loop ghost*)
 
@@ -127,8 +126,20 @@ terminosAnteojo[] := terminosDiagrama[
 tablaAnteojo[] := tablaDen[terminosAnteojo[]];
 
 (*Muneco nieve*)
+terminosMunecoNieve[] := terminosDiagrama[
+    sinDenMunecoNieve,
+    denMunecoNieve,
+    {{k12 -> 1/2*(K12^2 - k1^2 - k2^2)}},
+    {}];
+
+tablaMunecoNieve[] := tablaDen[terminosMunecoNieve[]];
+
+
 (*Muneco nieve ghost*)
+terminosMunecoNieveGhost[] := terminosDiagrama[
+    sinDenMunecoNieveGhost,
+    denMunecoNieveGhost,
+    {{k13 -> 1/2*(K13^2 - k1^2 - k3^2)}},
+    {}];
 
-
-
-
+tablaMunecoNieveGhost[] := tablaDen[terminosMunecoNieveGhost[]];
