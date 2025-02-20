@@ -195,7 +195,7 @@ Icanonico[x_, y_] :=
 
 Jcanonico[x_, y_] := 
   Factor[Together[Total[Jcan[x, y]]] /. {k1^2 -> 0, k2^2 -> 0, k3^2 -> 0, k1^4 -> 0, k2^4 -> 0, k3^4 -> 0, k12 -> 0, k13^2 -> J1, 
-     k23^2 -> J1, k13*k23 -> J2}];
+     k23^2 -> J1, k13*k23 -> -1/2*J1}];
 Kcanonico[x_, y_] := 
   Factor[Together[Total[Kcan[x, y]]] /. {k1^2 -> 0, k2^2 -> 0, k3^2 -> 0, k1^4 -> 0, k2^4 -> 0, k3^4 -> 0, k12^2 -> K1, k13^2 -> K2, 
      k23^2 -> K2, k12 -> 0, k13 -> 0}];
