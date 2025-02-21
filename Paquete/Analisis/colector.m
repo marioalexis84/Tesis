@@ -191,7 +191,7 @@ Icanonico[x_, y_] :=
     k13^2 -> -2, k12 -> 1, k13 -> 1, k23 -> 1}];
 
 (*recordar lo que pasaba en las J. si habia un solo k12 daba cero. Los distintos de cero son aquellos: 
-      J1) que tuvieran k13^2 o k23^3, ambos iguales o J2) k13*k12.*)
+      J1) que tuvieran k13^2 o k23^3, ambos iguales o J2) k13*k12. Usamos J2 = -1/2*J1*)
 
 Jcanonico[x_, y_] := 
   Factor[Together[Total[Jcan[x, y]]] /. {k1^2 -> 0, k2^2 -> 0, k3^2 -> 0, k1^4 -> 0, k2^4 -> 0, k3^4 -> 0, k12 -> 0, k13^2 -> J1, 
