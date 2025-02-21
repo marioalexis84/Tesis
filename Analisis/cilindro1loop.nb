@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     51689,       1498]
-NotebookOptionsPosition[     49533,       1451]
-NotebookOutlinePosition[     49950,       1468]
-CellTagsIndexPosition[     49907,       1465]
+NotebookDataLength[     64565,       1804]
+NotebookOptionsPosition[     61136,       1744]
+NotebookOutlinePosition[     61563,       1761]
+CellTagsIndexPosition[     61520,       1758]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -23,18 +23,368 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"<<", " ", "Paquete`"}]], "Input",
  CellChangeTimes->{{3.945518468959593*^9, 3.9455185061731663`*^9}},
- CellLabel->"In[33]:=",ExpressionUUID->"95fe8bd3-bed1-4b0e-9989-e9f62acd7df3"],
+ CellLabel->"In[30]:=",ExpressionUUID->"95fe8bd3-bed1-4b0e-9989-e9f62acd7df3"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
- FormBox["\<\"/home/alexis/.Mathematica/Applications/Paquete/\"\>", 
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+    StyleBox["\<\"FeynCalc \"\>", "Text",
+     StripOnInput->False,
+     FontWeight->Bold], "\[InvisibleSpace]", 
+    StyleBox["\<\"10.1.0 (dev version, 2025-01-22 09:40:59 -03:00, 52c98487). \
+For help, use the \"\>", "Text",
+     StripOnInput->False], "\[InvisibleSpace]", 
+    StyleBox[
+     TagBox[
+      ButtonBox[
+       RowBox[{
+        RowBox[{"online", " ", "documentation"}], ","}],
+       BaseStyle->"Hyperlink",
+       ButtonData:>{
+         URL["https://feyncalc.github.io/referenceDev"], None},
+       ButtonNote->"https://feyncalc.github.io/referenceDev"],
+      DisplayForm], "Text",
+     StripOnInput->False], "\[InvisibleSpace]", 
+    StyleBox["\<\" visit the \"\>", "Text",
+     StripOnInput->False], "\[InvisibleSpace]", 
+    StyleBox[
+     TagBox[
+      ButtonBox["forum",
+       BaseStyle->"Hyperlink",
+       ButtonData:>{
+         URL["https://github.com/FeynCalc/feyncalc/discussions"], None},
+       ButtonNote->"https://github.com/FeynCalc/feyncalc/discussions/"],
+      DisplayForm], "Text",
+     StripOnInput->False], "\[InvisibleSpace]", 
+    StyleBox["\<\" and have a look at the supplied \"\>", "Text",
+     StripOnInput->False], "\[InvisibleSpace]", 
+    StyleBox[
+     TagBox[
+      ButtonBox[
+       RowBox[{"examples", "."}],
+       BaseStyle->"Hyperlink",
+       ButtonFunction:>SystemOpen[
+         FileNameJoin[{FeynCalc`$FeynCalcDirectory, "Examples"}]],
+       Evaluator->Automatic,
+       Method->"Preemptive"],
+      DisplayForm], "Text",
+     StripOnInput->False], "\[InvisibleSpace]", 
+    StyleBox["\<\" The PDF-version of the manual can be downloaded \"\>", 
+     "Text",
+     StripOnInput->False], "\[InvisibleSpace]", 
+    StyleBox[
+     TagBox[
+      ButtonBox[
+       RowBox[{"here", "."}],
+       BaseStyle->"Hyperlink",
+       ButtonData:>{
+         URL[
+         "https://github.com/FeynCalc/feyncalc-manual/releases/download/dev-\
+manual/FeynCalcManual.pdf"], None},
+       ButtonNote->
+        "https://github.com/FeynCalc/feyncalc-manual/releases/download/dev-\
+manual/FeynCalcManual.pdf"],
+      DisplayForm], "Text",
+     StripOnInput->False]}],
+   SequenceForm[
+    Style["FeynCalc ", "Text", Bold], 
+    Style[
+    "10.1.0 (dev version, 2025-01-22 09:40:59 -03:00, 52c98487). For help, \
+use the ", "Text"], 
+    Style[
+     DisplayForm[
+      ButtonBox["online documentation,", ButtonData :> {
+         URL["https://feyncalc.github.io/referenceDev"], None}, BaseStyle -> 
+       "Hyperlink", ButtonNote -> "https://feyncalc.github.io/referenceDev"]],
+      "Text"], 
+    Style[" visit the ", "Text"], 
+    Style[
+     DisplayForm[
+      ButtonBox["forum", ButtonData :> {
+         URL["https://github.com/FeynCalc/feyncalc/discussions"], None}, 
+       BaseStyle -> "Hyperlink", ButtonNote -> 
+       "https://github.com/FeynCalc/feyncalc/discussions/"]], "Text"], 
+    Style[" and have a look at the supplied ", "Text"], 
+    Style[
+     DisplayForm[
+      ButtonBox[
+      "examples.", BaseStyle -> "Hyperlink", ButtonFunction :> SystemOpen[
+         FileNameJoin[{FeynCalc`$FeynCalcDirectory, "Examples"}]], Evaluator -> 
+       Automatic, Method -> "Preemptive"]], "Text"], 
+    Style[" The PDF-version of the manual can be downloaded ", "Text"], 
+    Style[
+     DisplayForm[
+      ButtonBox["here.", ButtonData :> {
+         URL[
+         "https://github.com/FeynCalc/feyncalc-manual/releases/download/dev-\
+manual/FeynCalcManual.pdf"], None}, BaseStyle -> "Hyperlink", ButtonNote -> 
+       "https://github.com/FeynCalc/feyncalc-manual/releases/download/dev-\
+manual/FeynCalcManual.pdf"]], "Text"]],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.945518507169669*^9, {3.945519430077939*^9, 3.945519443452917*^9}, 
+   3.9455195739455767`*^9, 3.9455196377093897`*^9, 3.9460367762608547`*^9, {
+   3.946049668017942*^9, 3.946049687518525*^9}, 3.949155427312977*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"fadf4346-53f3-4540-97e4-a96afe0a98c9"],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"If you use FeynCalc in your research, please evaluate \
+FeynCalcHowToCite[] to learn how to cite this software.\"\>", "Text",
+   StripOnInput->False], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.945518507169669*^9, {3.945519430077939*^9, 3.945519443452917*^9}, 
+   3.9455195739455767`*^9, 3.9455196377093897`*^9, 3.9460367762608547`*^9, {
+   3.946049668017942*^9, 3.946049687518525*^9}, 3.9491554273183804`*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"5608790b-3794-422e-b99b-1ae69350788e"],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Please keep in mind that the proper academic attribution of \
+our work is crucial to ensure the future development of this package!\"\>", 
+   "Text",
+   StripOnInput->False,
+   FontSlant->Italic], TraditionalForm]], "Print",
+ CellChangeTimes->{
+  3.945518507169669*^9, {3.945519430077939*^9, 3.945519443452917*^9}, 
+   3.9455195739455767`*^9, 3.9455196377093897`*^9, 3.9460367762608547`*^9, {
+   3.946049668017942*^9, 3.946049687518525*^9}, 3.949155427321188*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"8be05095-8642-4134-bdfa-e13c2b975e14"],
+
+Cell[BoxData[
+ FormBox["\<\"/home/mario/.Mathematica/Applications/Paquete/\"\>", 
   TraditionalForm]], "Print",
  CellChangeTimes->{
   3.945518507169669*^9, {3.945519430077939*^9, 3.945519443452917*^9}, 
    3.9455195739455767`*^9, 3.9455196377093897`*^9, 3.9460367762608547`*^9, {
-   3.946049668017942*^9, 3.946049687518525*^9}},
+   3.946049668017942*^9, 3.946049687518525*^9}, 3.9491554273511963`*^9},
  CellLabel->
   "During evaluation of \
-In[33]:=",ExpressionUUID->"a0477358-5669-4689-bb29-83a6b73035a2"]
+In[30]:=",ExpressionUUID->"1be0cb39-f0e0-4077-a233-0ff25ffb4cdf"]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "k1", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"k1\\\\\\\"\\\", \
+TraditionalForm]\\) appears in multiple contexts \
+\\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Paquete`\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}], \
+TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 2, 
+    20913018445041791172, "Local", "Paquete`k1"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.949155427460471*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"5c33360b-57f2-4d0a-8ff9-73aa993ba0fc"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "k2", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"k2\\\\\\\"\\\", \
+TraditionalForm]\\) appears in multiple contexts \
+\\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Paquete`\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}], \
+TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 3, 
+    20913018445041791172, "Local", "Paquete`k2"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.949155427482842*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"214f86b3-c19d-4030-8195-f63e4b8bc985"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "k3", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"k3\\\\\\\"\\\", \
+TraditionalForm]\\) appears in multiple contexts \
+\\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Paquete`\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}], \
+TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 4, 
+    20913018445041791172, "Local", "Paquete`k3"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.949155427517668*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"ba28ac85-37b2-4c8e-a02a-a55e92ffa282"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "k23", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"k23\\\\\\\"\\\", \
+TraditionalForm]\\) appears in multiple contexts \
+\\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Paquete`\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}], \
+TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 5, 
+    20913018445041791172, "Local", "Paquete`k23"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.949155427561887*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"3ec486ef-fb21-4244-b1a7-6635dafc74e5"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "K12", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"K12\\\\\\\"\\\", \
+TraditionalForm]\\) appears in multiple contexts \
+\\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Paquete`\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}], \
+TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 6, 
+    20913018445041791172, "Local", "Paquete`K12"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.949155427613902*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"54ceeeff-8d83-4c79-9b70-31889b46ba9e"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "K13", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"K13\\\\\\\"\\\", \
+TraditionalForm]\\) appears in multiple contexts \
+\\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Paquete`\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}], \
+TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 7, 
+    20913018445041791172, "Local", "Paquete`K13"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.9491554276613493`*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"7e9d06d9-2b52-4ed4-9913-5c8587e42bc7"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "Q23", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"Q23\\\\\\\"\\\", \
+TraditionalForm]\\) appears in multiple contexts \
+\\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Paquete`\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}], \
+TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 8, 
+    20913018445041791172, "Local", "Paquete`Q23"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.9491554276969767`*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"c99a9a67-506a-4817-98bd-9afed03af071"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "x", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"x\\\\\\\"\\\", TraditionalForm]\\) \
+appears in multiple contexts \\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\
+\\\\\\\"Paquete`\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \
+\\\"}\\\"}], TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 9, 
+    20913018445041791172, "Local", "Paquete`x"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.94915542773787*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"724c7077-d654-4fd5-b6f3-14ed32c8c61f"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "K1", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"K1\\\\\\\"\\\", \
+TraditionalForm]\\) appears in multiple contexts \
+\\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Paquete`\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}], \
+TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 10, 
+    20913018445041791172, "Local", "Paquete`K1"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.94915542777453*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"4b9008e6-0f98-49c2-bceb-9b63db317608"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "K2", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"K2\\\\\\\"\\\", \
+TraditionalForm]\\) appears in multiple contexts \
+\\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Paquete`\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}], \
+TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 11, 
+    20913018445041791172, "Local", "Paquete`K2"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.949155427810465*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"70c2675c-e18a-4199-937e-9df22ff1a5ed"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "i", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"i\\\\\\\"\\\", TraditionalForm]\\) \
+appears in multiple contexts \\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\
+\\\\\\\"Paquete`\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \
+\\\"}\\\"}], TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 12, 
+    20913018445041791172, "Local", "Paquete`i"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.949155427848068*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"cb161267-78a2-4e37-8e07-1ecc6bd28acb"],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{
+   "J1", "shdw", 
+    "\"Symbol \\!\\(\\*FormBox[\\\"\\\\\\\"J1\\\\\\\"\\\", \
+TraditionalForm]\\) appears in multiple contexts \
+\\!\\(\\*FormBox[RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Paquete`\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}], \
+TraditionalForm]\\); definitions in context \
+\\!\\(\\*FormBox[\\\"\\\\\\\"Paquete`\\\\\\\"\\\", TraditionalForm]\\) may \
+shadow or be shadowed by other definitions.\"", 2, 30, 13, 
+    20913018445041791172, "Local", "Paquete`J1"},
+   "MessageTemplate2"], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.949155427885777*^9},
+ CellLabel->
+  "During evaluation of \
+In[30]:=",ExpressionUUID->"88a86a71-3c40-4068-b4fb-d968388af9a3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -42,7 +392,7 @@ Cell[CellGroupData[{
 Cell[BoxData["denCil1LoopGhost"], "Input",
  CellChangeTimes->{{3.9460496947035513`*^9, 3.9460497209099092`*^9}, {
   3.946049754911449*^9, 3.946049756542639*^9}},
- CellLabel->"In[38]:=",ExpressionUUID->"886db253-a459-410d-a85b-b479331dbcee"],
+ CellLabel->"In[31]:=",ExpressionUUID->"886db253-a459-410d-a85b-b479331dbcee"],
 
 Cell[BoxData[
  FormBox[
@@ -126,14 +476,14 @@ Cell[BoxData[
        FeynCalc`Momentum[Paquete`k1, D] - FeynCalc`Momentum[Paquete`k2, D]]],
      Editable->False]}]], TraditionalForm]], "Output",
  CellChangeTimes->{{3.946049700194592*^9, 3.946049723970724*^9}, 
-   3.946049757061181*^9},
- CellLabel->"Out[38]=",ExpressionUUID->"fa026a11-62cb-4b9e-b40c-24442b5108fe"]
+   3.946049757061181*^9, 3.9491554284591427`*^9},
+ CellLabel->"Out[31]=",ExpressionUUID->"2dde0c83-e775-458d-acc9-47ddfda2ad93"]
 }, Open  ]],
 
 Cell[BoxData[
  RowBox[{"sinDenCil1LoopGhost", ";"}]], "Input",
  CellChangeTimes->{{3.946049736007167*^9, 3.94604975011122*^9}},
- CellLabel->"In[37]:=",ExpressionUUID->"ebadc4f7-4ec5-473c-826f-0bae60fb45c2"],
+ CellLabel->"In[32]:=",ExpressionUUID->"ebadc4f7-4ec5-473c-826f-0bae60fb45c2"],
 
 Cell[CellGroupData[{
 
@@ -150,65 +500,7 @@ Cell[BoxData[
       RowBox[{"k2", "->", 
        RowBox[{"-", "k2"}]}], "}"}]}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.946049760263887*^9, 3.9460498207520027`*^9}},
- CellLabel->"In[40]:=",ExpressionUUID->"ad38c37c-baa0-4b5a-9ff9-66c3c1071245"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- FormBox[
-  InterpretationBox[
-   RowBox[{"\<\"Denominador: \"\>", "\[InvisibleSpace]", 
-    FractionBox["1", 
-     RowBox[{
-      SuperscriptBox["k1", "2"], " ", 
-      SuperscriptBox["K12", "2"], " ", 
-      SuperscriptBox["k2", "4"], " ", 
-      SuperscriptBox["K23", "2"], " ", 
-      SuperscriptBox["k3", "2"]}]]}],
-   SequenceForm[
-   "Denominador: ", Paquete`k1^(-2) Paquete`K12^(-2) Paquete`k2^(-4) 
-    Paquete`K23^(-2) Paquete`k3^(-2)],
-   Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{{3.9460498089387007`*^9, 3.9460498221437683`*^9}},
- CellLabel->
-  "During evaluation of \
-In[40]:=",ExpressionUUID->"d89c10f8-3a7c-496a-a9a4-a7c50693d19d"],
-
-Cell[BoxData[
- FormBox[
-  InterpretationBox[
-   RowBox[{"\<\"Grados: \"\>", "\[InvisibleSpace]", 
-    RowBox[{"{", 
-     RowBox[{
-     "4", ",", "4", ",", "4", ",", "4", ",", "4", ",", "6", ",", "6", ",", 
-      "6", ",", "6", ",", "10", ",", "10", ",", "10", ",", "10", ",", "10", 
-      ",", "10", ",", "10", ",", "6", ",", "6", ",", "6", ",", "8", ",", "8", 
-      ",", "8", ",", "8", ",", "8", ",", "8", ",", "8", ",", "8", ",", "8", 
-      ",", "8", ",", "8", ",", "10", ",", "10", ",", "10", ",", "10", ",", 
-      "6", ",", "6", ",", "6", ",", "8", ",", "8", ",", "8", ",", "8", ",", 
-      "10", ",", "10", ",", "6", ",", "6", ",", "6", ",", "6", ",", "8", ",", 
-      "8", ",", "8", ",", "12", ",", "12", ",", "12", ",", "12", ",", "12", 
-      ",", "12", ",", "12", ",", "8", ",", "8", ",", "8", ",", "10", ",", 
-      "10", ",", "10", ",", "10", ",", "10", ",", "8", ",", "8", ",", "8", 
-      ",", "8", ",", "10", ",", "10", ",", "10", ",", "10", ",", "10", ",", 
-      "10", ",", "10", ",", "10", ",", "10", ",", "10", ",", "10", ",", "12", 
-      ",", "12", ",", "12", ",", "12", ",", "12", ",", "12", ",", "10", ",", 
-      "10", ",", "10", ",", "12", ",", "12", ",", "12", ",", "12", ",", "8", 
-      ",", "8", ",", "8", ",", "8", ",", "10", ",", "10", ",", "10", ",", 
-      "10", ",", "10", ",", "10", ",", "10", ",", "10", ",", "10"}], "}"}]}],
-   SequenceForm[
-   "Grados: ", {4, 4, 4, 4, 4, 6, 6, 6, 6, 10, 10, 10, 10, 10, 10, 10, 6, 6, 
-    6, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 10, 10, 10, 10, 6, 6, 6, 8, 8, 8, 8, 
-    10, 10, 6, 6, 6, 6, 8, 8, 8, 12, 12, 12, 12, 12, 12, 12, 8, 8, 8, 10, 10, 
-    10, 10, 10, 8, 8, 8, 8, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 12, 
-    12, 12, 12, 12, 12, 10, 10, 10, 12, 12, 12, 12, 8, 8, 8, 8, 10, 10, 10, 
-    10, 10, 10, 10, 10, 10}],
-   Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{{3.9460498089387007`*^9, 3.9460498221827307`*^9}},
- CellLabel->
-  "During evaluation of \
-In[40]:=",ExpressionUUID->"3f350dd3-28e1-4e7c-b040-78032d879b52"]
-}, Open  ]],
+ CellLabel->"In[33]:=",ExpressionUUID->"ad38c37c-baa0-4b5a-9ff9-66c3c1071245"],
 
 Cell[BoxData[
  FormBox[
@@ -843,8 +1135,9 @@ Cell[BoxData[
       SuperscriptBox["k2", "4"], " ", 
       SuperscriptBox["K23", "2"], " ", 
       SuperscriptBox["k3", "2"]}]]}], "}"}], TraditionalForm]], "Output",
- CellChangeTimes->{{3.946049809009502*^9, 3.946049822226201*^9}},
- CellLabel->"Out[40]=",ExpressionUUID->"c14dd938-3402-407d-85a5-9dfb7b41f5d3"]
+ CellChangeTimes->{{3.946049809009502*^9, 3.946049822226201*^9}, 
+   3.949155438149907*^9},
+ CellLabel->"Out[33]=",ExpressionUUID->"c324b65c-f029-4349-bcad-e55368b31522"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1449,8 +1742,8 @@ Cell[BoxData[
  CellLabel->"Out[20]=",ExpressionUUID->"fb77d779-f925-41c7-a5a0-a2f6ddafd73e"]
 }, Open  ]]
 },
-WindowSize->{1358, 712},
-WindowMargins->{{1, Automatic}, {1, Automatic}},
+WindowSize->{1023., 531.75},
+WindowMargins->{{0.75, Automatic}, {0.75, Automatic}},
 Magnification:>1. Inherited,
 FrontEndVersion->"12.3 for Linux x86 (64-bit) (July 9, 2021)",
 StyleDefinitions->"Default.nb",
@@ -1468,37 +1761,50 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 204, 3, 30, "Input",ExpressionUUID->"95fe8bd3-bed1-4b0e-9989-e9f62acd7df3"],
-Cell[787, 27, 434, 9, 22, "Print",ExpressionUUID->"a0477358-5669-4689-bb29-83a6b73035a2"]
+Cell[580, 22, 204, 3, 29, "Input",ExpressionUUID->"95fe8bd3-bed1-4b0e-9989-e9f62acd7df3"],
+Cell[CellGroupData[{
+Cell[809, 29, 4018, 103, 55, "Print",ExpressionUUID->"fadf4346-53f3-4540-97e4-a96afe0a98c9"],
+Cell[4830, 134, 564, 11, 27, "Print",ExpressionUUID->"5608790b-3794-422e-b99b-1ae69350788e"],
+Cell[5397, 147, 608, 13, 27, "Print",ExpressionUUID->"8be05095-8642-4134-bdfa-e13c2b975e14"],
+Cell[6008, 162, 457, 9, 22, "Print",ExpressionUUID->"1be0cb39-f0e0-4077-a233-0ff25ffb4cdf"]
+}, Open  ]],
+Cell[6480, 174, 750, 16, 28, "Message",ExpressionUUID->"5c33360b-57f2-4d0a-8ff9-73aa993ba0fc"],
+Cell[7233, 192, 750, 16, 28, "Message",ExpressionUUID->"214f86b3-c19d-4030-8195-f63e4b8bc985"],
+Cell[7986, 210, 750, 16, 28, "Message",ExpressionUUID->"ba28ac85-37b2-4c8e-a02a-a55e92ffa282"],
+Cell[8739, 228, 753, 16, 28, "Message",ExpressionUUID->"3ec486ef-fb21-4244-b1a7-6635dafc74e5"],
+Cell[9495, 246, 753, 16, 28, "Message",ExpressionUUID->"54ceeeff-8d83-4c79-9b70-31889b46ba9e"],
+Cell[10251, 264, 755, 16, 28, "Message",ExpressionUUID->"7e9d06d9-2b52-4ed4-9913-5c8587e42bc7"],
+Cell[11009, 282, 755, 16, 28, "Message",ExpressionUUID->"c99a9a67-506a-4817-98bd-9afed03af071"],
+Cell[11767, 300, 744, 15, 28, "Message",ExpressionUUID->"724c7077-d654-4fd5-b6f3-14ed32c8c61f"],
+Cell[12514, 317, 750, 16, 28, "Message",ExpressionUUID->"4b9008e6-0f98-49c2-bceb-9b63db317608"],
+Cell[13267, 335, 751, 16, 28, "Message",ExpressionUUID->"70c2675c-e18a-4199-937e-9df22ff1a5ed"],
+Cell[14021, 353, 746, 15, 28, "Message",ExpressionUUID->"cb161267-78a2-4e37-8e07-1ecc6bd28acb"],
+Cell[14770, 370, 751, 16, 28, "Message",ExpressionUUID->"88a86a71-3c40-4068-b4fb-d968388af9a3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1258, 41, 240, 3, 30, "Input",ExpressionUUID->"886db253-a459-410d-a85b-b479331dbcee"],
-Cell[1501, 46, 2438, 83, 59, "Output",ExpressionUUID->"fa026a11-62cb-4b9e-b40c-24442b5108fe"]
+Cell[15558, 391, 240, 3, 29, "Input",ExpressionUUID->"886db253-a459-410d-a85b-b479331dbcee"],
+Cell[15801, 396, 2462, 83, 51, "Output",ExpressionUUID->"2dde0c83-e775-458d-acc9-47ddfda2ad93"]
 }, Open  ]],
-Cell[3954, 132, 206, 3, 30, "Input",ExpressionUUID->"ebadc4f7-4ec5-473c-826f-0bae60fb45c2"],
+Cell[18278, 482, 206, 3, 29, "Input",ExpressionUUID->"ebadc4f7-4ec5-473c-826f-0bae60fb45c2"],
 Cell[CellGroupData[{
-Cell[4185, 139, 541, 13, 30, "Input",ExpressionUUID->"ad38c37c-baa0-4b5a-9ff9-66c3c1071245"],
-Cell[CellGroupData[{
-Cell[4751, 156, 684, 18, 41, "Print",ExpressionUUID->"d89c10f8-3a7c-496a-a9a4-a7c50693d19d"],
-Cell[5438, 176, 2023, 33, 41, "Print",ExpressionUUID->"3f350dd3-28e1-4e7c-b040-78032d879b52"]
-}, Open  ]],
-Cell[7476, 212, 21861, 634, 326, "Output",ExpressionUUID->"c14dd938-3402-407d-85a5-9dfb7b41f5d3"]
+Cell[18509, 489, 541, 13, 29, "Input",ExpressionUUID->"ad38c37c-baa0-4b5a-9ff9-66c3c1071245"],
+Cell[19053, 504, 21887, 635, 454, "Output",ExpressionUUID->"c324b65c-f029-4349-bcad-e55368b31522"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[29374, 851, 585, 16, 30, "Input",ExpressionUUID->"d89c4e7b-f469-4bde-805a-c99b8f1bf16e"],
-Cell[29962, 869, 16479, 486, 236, "Output",ExpressionUUID->"d7387c41-1fa3-45d4-92fa-2dc5ddcb9a30"]
+Cell[40977, 1144, 585, 16, 29, "Input",ExpressionUUID->"d89c4e7b-f469-4bde-805a-c99b8f1bf16e"],
+Cell[41565, 1162, 16479, 486, 305, "Output",ExpressionUUID->"d7387c41-1fa3-45d4-92fa-2dc5ddcb9a30"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[46478, 1360, 514, 15, 30, "Input",ExpressionUUID->"32b60375-6c6f-489e-8966-b966086eab8b"],
-Cell[46995, 1377, 195, 4, 33, "Output",ExpressionUUID->"eab04edd-f4fa-47bf-b665-21804d49f993"]
+Cell[58081, 1653, 514, 15, 29, "Input",ExpressionUUID->"32b60375-6c6f-489e-8966-b966086eab8b"],
+Cell[58598, 1670, 195, 4, 32, "Output",ExpressionUUID->"eab04edd-f4fa-47bf-b665-21804d49f993"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[47227, 1386, 703, 15, 30, "Input",ExpressionUUID->"55eb04ba-0d73-4197-a041-f11890c21bd1"],
-Cell[47933, 1403, 767, 18, 69, "Output",ExpressionUUID->"a1e4603c-c3d1-4c61-a18d-7056644310a1"]
+Cell[58830, 1679, 703, 15, 29, "Input",ExpressionUUID->"55eb04ba-0d73-4197-a041-f11890c21bd1"],
+Cell[59536, 1696, 767, 18, 68, "Output",ExpressionUUID->"a1e4603c-c3d1-4c61-a18d-7056644310a1"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[48737, 1426, 582, 16, 30, "Input",ExpressionUUID->"0e8a46cf-0d56-484a-b0a8-560c664cf4a9"],
-Cell[49322, 1444, 195, 4, 33, "Output",ExpressionUUID->"fb77d779-f925-41c7-a5a0-a2f6ddafd73e"]
+Cell[60340, 1719, 582, 16, 29, "Input",ExpressionUUID->"0e8a46cf-0d56-484a-b0a8-560c664cf4a9"],
+Cell[60925, 1737, 195, 4, 32, "Output",ExpressionUUID->"fb77d779-f925-41c7-a5a0-a2f6ddafd73e"]
 }, Open  ]]
 }
 ]
